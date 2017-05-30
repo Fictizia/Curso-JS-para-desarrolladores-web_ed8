@@ -1,0 +1,12 @@
+Algoritmo Ejercicio2
+	
+	Leer hombres
+	Leer mujeres
+	
+	total<-hombres+mujeres
+	
+	Escribir (hombres*100)/total
+	Escribir (mujeres*100)/total
+	
+	
+FinAlgoritmo

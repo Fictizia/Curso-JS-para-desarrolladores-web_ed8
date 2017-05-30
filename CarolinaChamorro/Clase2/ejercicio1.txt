@@ -1,0 +1,37 @@
+1 - Diseña un programa que lea dos números y realice los siguientes cálculos:
+
+Algoritmo CalculosVarios
+	
+	a = 8
+	b = 7
+	Resultado = a+b
+	Escribir resultado
+	
+	//15
+	
+	
+	a = 8
+	b = 7
+	Resultado = a-b
+	Escribir resultado
+	
+	//1
+	
+	a = 4
+	b = 2
+	Resultado = a/b
+	Escribir resultado
+	
+	//2
+	
+	a = 2
+	b = 5
+	Resultado = a*b
+	Escribir resultado
+	
+	//10
+	
+FinAlgoritmo
+
+2 - Diseña un programa para calcular el porcentaje de hombres y mujeres en nuestro curso.
+

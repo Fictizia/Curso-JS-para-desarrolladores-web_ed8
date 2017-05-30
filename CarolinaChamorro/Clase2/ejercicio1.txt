@@ -58,3 +58,26 @@ FinAlgoritmo
 3 - Diseña un programa que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
 
 
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Segun a1 Hacer
+		
+		(opcion_1):
+			(secuencia_de_acciones_1)
+		(opcion_2):
+			(secuencia_de_acciones_2)
+		(opcion_3):
+			secuencia_de_acciones_3)
+		De Otro Modo:
+			(secuencia_de_acciones_dom)
+			
+			
+	Fin Segun 
+		

@@ -1,1 +1,15 @@
 
+Algoritmo calculo
+	A <-6
+	B <-2
+	C <-A+B
+	D <-A-B
+	E <-A/B
+	F <-A*B
+ 
+    Escribir "Suma " C
+	Escribir "Resta " D
+	Escribir "División " E
+	Escribir "Multiplicación " F
+	
+FinAlgoritmo

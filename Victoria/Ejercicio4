@@ -1,4 +1,5 @@
 Algoritmo Ejercicio4
+	Escribir "indica tres números"
 	Leer numa
 	Leer numb
 	Leer numc

@@ -1,0 +1,21 @@
+Algoritmo Ejercicio4
+	Leer numa
+	Leer numb
+	Leer numc
+	
+	si numa>numb entonces
+		si numa>numc Entonces
+			Escribir numa, " es el mayor"
+		FinSi
+		si numc>numa Entonces
+			escribir numc, " es el mayor"
+		FinSi
+	SiNo
+		si numb>numc Entonces
+			Escribir numb, " es el mayor"
+		FinSi
+		si numc>numb Entonces
+			escribir numc, " es el mayor"
+		FinSi
+	FinSi
+FinAlgoritmo

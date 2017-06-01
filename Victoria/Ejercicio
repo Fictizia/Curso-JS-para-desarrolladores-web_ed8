@@ -1,0 +1,16 @@
+Algoritmo ejercicio7
+	Escribir "introduce un número y te diré si es positivo o negativo"
+	Leer numeroa
+	Si numeroa>0 Entonces
+		Escribir "es un número positivo"
+	FinSi
+	
+	si numeroa=0 Entonces
+		Escribir "el 0 es un número neutro"
+	FinSi
+	
+	si numeroa<0 Entonces
+		Escribir "es un número negativo"
+	FinSi
+	
+FinAlgoritmo

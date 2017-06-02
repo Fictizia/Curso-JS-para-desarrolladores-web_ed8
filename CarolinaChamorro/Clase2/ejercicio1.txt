@@ -271,6 +271,17 @@ FinAlgoritmo
 
 // 10 - Diseña un algoritmo que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
 
+Algoritmo 
+	
+	Escribir '¿Qué día es hoy del mes? '
+	Leer a1
+	
+	Escribir '¿En qué mes estamos?'
+	Leer a2
+	
+	Escribir '¿En que año estamos?
+	
+FinAlgoritmo
 
 
 

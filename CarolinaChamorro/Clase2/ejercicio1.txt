@@ -160,5 +160,32 @@ FinAlgoritmo
 
 //5 - Diseña un programa que siga el siguiente proceso:
 
+Algoritmo Programa
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Escribir 'Escribe un tercer número '
+	
+	Leer a3
+	
+	Si a1 < 0 Entonces 
+		Escribir a1,' + ',a2,' = ',a2+a3 
+	SiNo
+		
+		Escribir a1, ' x ',a2, ' x ',a3, ' = ', a1*a2*a3
+		
+	Fin Si
+	
+FinAlgoritmo
+
+//6 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
+
+
 
 		

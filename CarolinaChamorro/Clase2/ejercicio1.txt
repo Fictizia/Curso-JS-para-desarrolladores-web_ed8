@@ -227,5 +227,24 @@ FinAlgoritmo
 
 //8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
 
+Algoritmo ParImpar
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir resto
+	Si a1 MOD 2 = 0 Entonces
+		Escribir 'Es un número par '
+	SiNo
+		Escribir 'Es un número impar '
+	Fin Si
+	
+FinAlgoritmo
+
+//9 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
+
+
+
 
 		

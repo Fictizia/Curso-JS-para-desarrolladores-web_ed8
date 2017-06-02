@@ -111,9 +111,54 @@ FinAlgoritmo
 
 //4 - Diseña un programa que lea tres números distintos y nos diga cual de ellos es el mayor.
 	
+Algoritmo Comparador de tres números
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Escribir 'Escribe un tercer número '
+	
+	Leer a3
+	
+	Si  a1 > a2 y a1 > a3 Entonces
+		
+		Escribir 'El primer número introducido es el mayor '
+		
+	SiNo
+		Si a2 > a1 y a2 > a3 Entonces
+			Escribir 'El segundo número introducido es el mayor '
 			
+		SiNo
+			Si a3 > a1 y a3 > a2 Entonces
+				Escribir 'El tercer número introducido es el mayor '
+			SiNo
+				Si a1 = a2 y a2 = a3 Entonces
+					Escribir 'Los tres números son iguales '
+					
+				SiNo
+					Si a1 = a2 Entonces
+						Escribir 'El primer y segundo número son iguales y son los mayores '
+					SiNo
+						Si a1 = a3 Entonces
+							Escribir 'El primer y el tercer número son iguales '
+						SiNo
+							Escribir  'El segundo y el tercer número son iguales '
+						FinSi
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+	
+	
+FinAlgoritmo
 
-
+//5 - Diseña un programa que siga el siguiente proceso:
 
 
 		

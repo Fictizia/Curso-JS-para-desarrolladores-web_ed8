@@ -33,9 +33,9 @@ Algoritmo CalculosVarios
 	
 FinAlgoritmo
 
-2 - Diseña un programa para calcular el porcentaje de hombres y mujeres en nuestro curso.
+//2 - Diseña un programa para calcular el porcentaje de hombres y mujeres en nuestro curso.
 
-Algoritmo sin_titulo
+Algoritmo Contador
 	
 	Escribir '¿Cuántos hombres hay en total?'
 	
@@ -55,9 +55,12 @@ Algoritmo sin_titulo
 	
 FinAlgoritmo
 
-3 - Diseña un programa que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
+//3 - Diseña un programa que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
+// Opción 1 con Si,entonces o if then else
 
 
+Algoritmo Comparador
+	
 	
 	Escribir 'Escribe un número '
 	
@@ -67,17 +70,50 @@ FinAlgoritmo
 	
 	Leer a2
 	
-	Segun a1 Hacer
+	Si a1 > a2 Entonces
+		Escribir 'El primer número introducido es mayor '
 		
-		(opcion_1):
-			(secuencia_de_acciones_1)
-		(opcion_2):
-			(secuencia_de_acciones_2)
-		(opcion_3):
-			secuencia_de_acciones_3)
-		De Otro Modo:
-			(secuencia_de_acciones_dom)
+	SiNo
+		Si a2 > a1 Entonces
+			Escribir  'El segundo número es mayor '
+		SiNo
+			Escribir 'Los dos números son iguales '
+		Fin Si
+		
+	Fin Si
+FinAlgoritmo
+	
+	
+// Opción 2 con Switch
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	a3 = a1 - a2
+		
+	Segun a3 Hacer
+		a3 > 0:
+			Escribir 'El primer número es mayor '
+		a3 < 0:
+			Escribir 'El segundo número es mayor '
 			
+		De Otro Modo:
+			Escribir 'Los dos números son iguales '
 			
 	Fin Segun 
+			
+FinAlgoritmo
+
+//4 - Diseña un programa que lea tres números distintos y nos diga cual de ellos es el mayor.
+	
+			
+
+
+
+
 		

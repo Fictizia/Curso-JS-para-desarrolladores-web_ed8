@@ -186,6 +186,46 @@ FinAlgoritmo
 
 //6 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
 
+Algoritmo Descuento
+	
+	Escribir 'Escribe un precio '
+	
+	Leer precio
+	
+	Escribir '¿Estamos en los meses de invierno? Contesta con: sí/no (Minúsculas) '
+	
+	Leer a1
+	
+	Escribir '¿Es viernes o fin de semana? Contesta con: sí/no (minúsculas) '
+	
+	Leer b2
+	
+	Si a1 = 'si' y b2 = 'si' Entonces
+		Escribir 'El precio es ', precio*0.75
+	SiNo
+		Escribir 'El precio es ', precio
+		
+	Fin Si
+	
+FinAlgoritmo
+
+//7 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es positivo o negativo.
+
+Algoritmo PositivoNegativo
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Si a1 > 0 y a1 = 0 Entonces
+		Escribir 'Es un número positivo '
+	SiNo
+		Escribir 'Es un número negativo '
+	Fin Si
+	
+FinAlgoritmo
+
+//8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
 
 
 		

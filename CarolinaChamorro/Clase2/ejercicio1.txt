@@ -244,6 +244,34 @@ FinAlgoritmo
 
 //9 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
 
+Algoritmo Identiicador
+	
+	Escribir 'Contraseña: '
+	
+	Leer a1
+	
+	intentos = 0
+	
+	Mientras a1 != 'Fictizia mola mucho' y intentos < 2 Hacer
+		
+		Escribir '¡Error! Vuelve a introducir tu contraseña '
+		Leer a1
+		intentos = intentos +1
+		
+	Fin Mientras
+	
+	si intentos = 3 Entonces
+		Escribir 'No has acertado las contraseña '
+		
+	SiNo
+	Escribir 'Contraseña correcta '
+	FinSi
+	
+FinAlgoritmo
+
+// 10 - Diseña un algoritmo que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
+
+
 
 
 

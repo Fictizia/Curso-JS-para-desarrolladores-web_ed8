@@ -3,22 +3,22 @@ Algoritmo Ejercicio1
 	nsuma1<-6
 	nsuma2<-4
 	resultadosuma<-nsuma1 + nsuma2
-	Escribir "Resultado suma : "resultadosuma
+	Escribir "Resultado suma : " resultadosuma
 	
 	nresta1<-5
 	nresta2<-2
 	resultadoresta<-nresta1-nresta2
-	escribir "Resultado resta : "resultadoresta
+	Escribir "Resultado resta : " resultadoresta
 	
 	ndivision1<-10
 	ndivision2<-5
 	resultadodivision<-ndivision1/ndivision2
-	escribir "Resultado división : "resultadodivision
+	Escribir "Resultado división : " resultadodivision
 	
 	nproducto1<-5
 	nproducto2<-5
 	resultadoproducto<-nproducto1*nproducto1
-	escribir "Resultado producto : " resultadoproducto
+	Escribir "Resultado producto : " resultadoproducto
 	
 FinAlgoritmo
 

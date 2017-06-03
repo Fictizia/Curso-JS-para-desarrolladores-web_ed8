@@ -1,0 +1,13 @@
+Algoritmo ejerciciouno
+	Leer numeroa
+	Leer numerob
+	suma<-numeroa+numerob
+	Escribir "el resultado es", suma
+	resta<-numeroa-numerob
+	Escribir "el resultado es", resta
+	dividir<-numeroa/numerob
+	Escribir "el resultado es", dividir
+	multiplicar<-numeroa*numerob
+	Escribir "el resultado es", multiplicar
+	
+FinAlgoritmo

@@ -1,0 +1,18 @@
+Algoritmo porcentaje
+	
+	Escribir "¿Cuantos hombres hay en clase?"
+	
+	Leer A
+	
+	Escribir "¿Cuántas mujeres hay en clase?"
+	
+	Leer B
+	
+	hombres <- (A*100)/(A+B)
+	mujeres <- (B*100)/(A+B)
+	
+	
+	Escribir "Hay un" hombres "% de hombres"
+	Escribir "Hay un" mujeres "% de mujeres"
+	
+FinAlgoritmo

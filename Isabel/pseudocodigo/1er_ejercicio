@@ -1,0 +1,28 @@
+Algoritmo suma
+	
+	Escribir "Dime el primer número"
+	
+	Leer A
+	
+	Escribir  "Dime el segundo número"
+	
+	Leer B
+	
+	Escribir "La suma es:"
+	
+	Escribir A + B
+	
+	Escribir "La resta es:"
+	
+	Escribir A - B
+	
+	Escribir "La división es:"
+	
+	Escribir A / B
+	
+	Escribir "El producto es:"
+	
+	Escribir A * B	
+	
+	
+FinAlgoritmo

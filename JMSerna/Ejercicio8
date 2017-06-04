@@ -1,0 +1,11 @@
+Algoritmo Ejercicio8
+		Escribir"Inserta un número"
+		Leer numero
+		
+		Si numero MOD 2 = 0 entonces 
+			escribir "el número es par"
+		SiNo
+			escribir "el número es impar"
+		FinSi
+		
+FinAlgoritmo

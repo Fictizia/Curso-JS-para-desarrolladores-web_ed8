@@ -1,6 +1,6 @@
 Algoritmo sin_titulo
-	a = 5
-	b = 53
+	a = 34
+	b = 29
 	
 	Si a = b Entonces
 		escribir "Son iguales"		

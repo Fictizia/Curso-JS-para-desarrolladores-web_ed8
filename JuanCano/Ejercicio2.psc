@@ -5,8 +5,8 @@ Algoritmo sin_titulo
 	c = 8
 	hombres = (a*100)/c
 	mujeres = (b*100)/c
-	Escribir hombres
-	Escribir mujeres
+	Escribir "El porcentaje de hombres es " hombres
+	Escribir "El porcentaje de mujeres es " mujeres
 	
 	
 FinAlgoritmo

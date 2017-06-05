@@ -1,0 +1,11 @@
+Algoritmo Ejercicio7
+	Escribir"Inserta un número"
+	Leer numero
+	
+	Si numero<0 entonces 
+		escribir "el número es negativo"
+	SiNo
+		escribir "el número es positivo"
+	FinSi
+	
+FinAlgoritmo

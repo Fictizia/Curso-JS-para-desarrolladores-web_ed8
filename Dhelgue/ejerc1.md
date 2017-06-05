@@ -119,20 +119,68 @@ Valor de su producto
 
 5 - Diseña un programa que siga el siguiente proceso:
 
-Pedir por teclado tres números.
-Si el primero es negativo, debe sumar los otros dos
-Si no multiplicará los tres numeros
-Mostrar el resultado final incluyendo una referencia a la operación realizada.
-	// Tu solución
+	Algoritmo ejer5
+		Escribir "Dime un número..."
+		Leer numero1
+
+		Escribir "Dime un segundo número..."
+		Leer numero2
+
+		Escribir "Dime un tercer número..."
+		Leer numero3
+
+		Si numero1<0 Entonces
+			Escribir "Si tus tres números los sumamos dará como resultado..." , numero1+numero2+numero3
+		FinSi
+
+		Si numero1>0 Entonces
+			Escribir "Si tus tres números los multiplicamos dará como resultado..." , numero1*numero2*numero3
+		FinSi
+	FinAlgoritmo
+
 6 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
 
-Se aplica un 25% cuando:
-Estamos en los meses de invierno
-Y no es viernes o fin de semana.
-	// Tu solución
-7 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es positivo o negativo.
+	Algoritmo ejer6
+		Escribir "EL iPhone cuesta..."
+		Leer precio
 
-	// Tu solución
+		Escribir "¿Quieres saber si tendrás un descuento? ¿En qué estación del año nos encontramos?"
+		Leer estacion
+
+		Escribir "¿Qué día de la semana es hoy?"
+		Leer dia
+
+		Si estacion = "invierno" O dia = "lunes" O dia ="martes" O dia ="miercoles" O dia ="jueves" Entonces
+			Escribir "¡Si tienes un descuento del 25%, por tanto el precio de tu iPhone será..." , precio-(precio*25)/100
+		Sino 
+			Escribir "Opps, lo sentimos, no tenemos descuento para tu iPhone, el precio será de..." , precio
+		FinSi
+
+
+	FinAlgoritmo
+
+	
+7 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es positivo o negativo.
+	
+	Algoritmo ejer7
+		Repetir
+
+		Escribir "Dime un número al azar"
+		Leer numero1
+
+		Si numero1>=0 Entonces
+			Escribir "El número " , numero1 , " es positivo"
+		FinSi
+
+		Si numero1<0 Entonces
+			Escribir "Tu número " , numero1 , " es negativo"
+		FinSi
+
+		Hasta que numero1=0 
+	FinAlgoritmo
+	
+
+
 8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
 
 	// Tu solución
@@ -143,6 +191,7 @@ La palabra clave es "Fictizia mola mucho"
 Solo existen tres intentos
 Si se pasan los tres intentos. Se despliega un mensaje informativo.
 	// Tu solución
+	
 10 - Diseña un algoritmo que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
 
 Características:
@@ -151,6 +200,7 @@ Validar la fecha. En caso de error incluir un mensaje informativo.
 Después de validar, devolvemos la fecha en formato DD/MM/AAAA
 Convertimos el número del mes, en el nombre del mes real y devolvemos la fecha en el siguiente formato ( DD de MES de AAAA)
 	// Tu solución
+	
 11 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.
 
 Esperamos que el número sea menor de 50

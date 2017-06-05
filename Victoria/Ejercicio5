@@ -1,0 +1,14 @@
+Algoritmo ejercicio5
+	Escribir "indica 3 números"
+	Leer numa
+	leer numb
+	leer numc
+	
+	si numa<0 Entonces
+		escribir "Como el primer número es negativo, hemos sumado los otros dos y el total es ",numb+numc
+	SiNo
+		escribir "Todos son números positivos, al multiplicarlos el resultado es ", numa*numb*numc
+	FinSi
+	
+	
+FinAlgoritmo

@@ -1,0 +1,17 @@
+Algoritmo Ejercicio9
+valor<-0
+Para valor<-0 Hasta 4 Hacer
+	pass<-"Fictizia mola mucho"
+	Escribir "Indica la contraseña"
+	Leer passusuario
+	Si passusuario=pass Entonces
+		valor<-4
+		Escribir "Es correcto"
+	SiNo
+		Escribir "prueba otra vez"
+		valor<-Valor+1
+		
+	FinSi
+FinPara
+	
+FinAlgoritmo

@@ -3,19 +3,115 @@
 Caracteristicas de un año bisiesto:
 Tiene que ser divisible entre 4 y no tiene que ser divisible entre 100
 O puede ser divisble entre 100 y entre 400
-	// Tu solución
+	Algoritmo ejer1_clase3
+
+		Escribir "Dime un año al azar"
+		Leer ano
+
+		Si ano MOD 100 = 0 Y ano MOD 400 = 0 Entonces
+			Escribir "Tu año es bisiesto"
+		Sino
+			Escribir "Tu año no es bisiesto"
+		FinSi
+
+	FinAlgoritmo
+
 2 - Diseña un programa que imprima los numeros del 1 al 100.
 
-	// Tu solución
+	Algoritmo ejer1_clase3
+	
+	
+	Escribir "Comienza la cuenta..."
+	
+	contador<-0
+	
+	Mientras contador <=100 Hacer
+		
+		Escribir contador 
+		
+		contador<- contador+1
+		
+	FinMientras
+	
+	
+
+
+	FinAlgoritmo
+
+
 3 - Diseña un programa que imprima los numeros del 100 al 0.
 
-	// Tu solución
-4 - Diseña un programa que imprima los numeros pares entre 0 y 100.
+	Algoritmo ejer1_clase3
 
-	// Tu solución
+
+		Escribir "Comienza la cuenta atrás..."
+
+		contador<-100
+
+		Mientras contador >=0 Hacer
+
+			Escribir contador 
+
+			contador<- contador-1
+
+		FinMientras
+
+
+
+
+	FinAlgoritmo
+
+
+4 - Diseña un programa que imprima los numeros pares entre 0 y 100.
+	Algoritmo ejer1_clase3
+
+
+		Escribir "Comienza la cuenta atrás..."
+
+		contador<-2
+
+		Mientras contador <=100 Hacer
+
+			Escribir contador 
+
+			contador<- contador+2 
+
+		FinMientras
+
+
+
+
+	FinAlgoritmo
+
 5 - Diseña un programa que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
 
-	// Tu solución
+	Algoritmo ejer1_clase3
+
+
+		Escribir "Dime un número impar menor que 100..."
+		Leer numeroImpar
+
+		vueltas =  0
+
+		Escribir "Comienza la cuenta"
+
+		Mientras vueltas<=50 Hacer
+
+			Escribir numeroimpar 
+
+			numeroimpar<- numeroimpar+1
+
+			vueltas = vueltas+1
+
+		FinMientras
+
+
+
+
+	FinAlgoritmo
+
+
+
 6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 
 	// Tu solución

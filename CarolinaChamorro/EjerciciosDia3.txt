@@ -86,7 +86,36 @@ Algoritmo Imprimir1anumerospares
 	
 FinAlgoritmo
 
-//6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
+//SIN ACABAR ---- 6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
+
+Algoritmo Imprimir1anumerospares
+	
+	Escribir 'Escribe un número '
+	Leer valor1
+	
+	suma <- 0
+	
+	impares = 0
+	
+	¡ <- valor1
+	
+	Mientras i < valor1+50 Hacer
+		
+		Si numero = 50 Entonces
+			numeroRomano = "L"
+			numero = 0
+		Fin Si
+		
+	
+		
+	Fin Mientras
+	
+
+	
+FinAlgoritmo
+
+
+
 
 //7 - Diseña un programa que cuente las veces que aparece una determinada letra en una frase que introduciremos por teclado.
 

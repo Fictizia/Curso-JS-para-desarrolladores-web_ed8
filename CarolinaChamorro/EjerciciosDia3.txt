@@ -16,18 +16,48 @@ FinAlgoritmo
 
 //2 - Diseña un programa que imprima los numeros del 1 al 100.
 
-Algoritmo imprimir1al100
+Algoritmo Imprimir1a100
 	
-	Escribir 'Escribe un número '
-	Leer valor1
+	c <- 0
 	
-	Si valor1 > 0 y valor1 <= 100 Entonces
-		Escribir 'Imprimiendo...'
-	Sino
-		Escribir 'No se va a imprimir...'
-	Fin Si
+	Mientras c < 101 Hacer
+		Escribir c
+		c <- c+1
+		
+	Fin Mientras
 	
 FinAlgoritmo
 
+
 //3 - Diseña un programa que imprima los numeros del 100 al 0.
 
+Algoritmo Imprimir1a100
+	
+	c <- 100
+	
+	Mientras c >= 0 Hacer
+		Escribir c
+		c <- c-1
+		
+	Fin Mientras
+	
+	
+	
+	
+FinAlgoritmo
+
+//4 - Diseña un programa que imprima los numeros pares entre 0 y 100.
+
+
+
+Algoritmo Imprimir1anumerospares
+	
+	c <- 2
+	
+	Mientras c <= 100 Hacer
+		Escribir c
+		c <- c+2
+		
+	Fin Mientras
+	
+FinAlgoritmo

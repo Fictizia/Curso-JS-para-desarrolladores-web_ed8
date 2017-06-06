@@ -1,0 +1,31 @@
+Algoritmo imparesCien
+	
+	Escribir "Dime un número"
+	
+	Leer valorA
+	
+	valorB <- valorA + 49
+	
+	Para valorA<-valorA Hasta valorB Con Paso 1 Hacer
+		
+		resultado <- valorA +1
+		
+		Si resultado %2=0 Entonces
+			
+			Para valorA<-resultado Hasta valorB Con Paso resultado Hacer
+				pares <- resultado+resultado
+			Fin Para
+			
+		Sino
+			Longitud(resultado)
+			
+		Fin Si
+		
+	Fin Para
+	
+	
+	Escribir "El resultado de la suma de pares es" pares "y hay un total de:" impares
+	
+	
+	
+FinAlgoritmo

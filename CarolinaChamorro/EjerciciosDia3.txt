@@ -16,3 +16,18 @@ FinAlgoritmo
 
 //2 - Diseña un programa que imprima los numeros del 1 al 100.
 
+Algoritmo imprimir1al100
+	
+	Escribir 'Escribe un número '
+	Leer valor1
+	
+	Si valor1 > 0 y valor1 <= 100 Entonces
+		Escribir 'Imprimiendo...'
+	Sino
+		Escribir 'No se va a imprimir...'
+	Fin Si
+	
+FinAlgoritmo
+
+//3 - Diseña un programa que imprima los numeros del 100 al 0.
+

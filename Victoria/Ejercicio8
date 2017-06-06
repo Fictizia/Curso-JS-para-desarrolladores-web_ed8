@@ -1,0 +1,10 @@
+Algoritmo Ejercicio8
+	Escribir "indica un número y te diré si es par o impar"
+	Leer numeroa
+	Si numeroa MOD 2=0 Entonces
+		Escribir "Es un numero par"
+	SiNo
+		Escribir "es un número impar"
+	FinSi
+	
+FinAlgoritmo

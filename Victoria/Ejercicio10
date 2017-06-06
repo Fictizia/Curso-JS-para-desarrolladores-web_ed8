@@ -1,0 +1,57 @@
+Algoritmo Ejercicio10
+	Escribir "Indíca un día en formato dd"
+	Leer dia
+	Escribir "Indíca un mes en formato mm"
+	Leer mes
+	Escribir "Indica un año en formato"
+	leer año
+	
+	Si dia>0 y dia<31 y mes=1 o mes=3 o mes=5 o mes=7 o mes=8 o mes=10 o mes=12 y año>0 y año<2017 Entonces
+		Escribir "Formato válido, la fecha es " , dia ,"/", mes, "/", año
+		Si mes=1 Entonces
+			Escribir dia, " de Enero de ", año
+		FinSi
+		Si mes=3 Entonces
+			Escribir dia, " de Marzo de ", año
+		FinSi
+		Si mes=5 Entonces
+			Escribir dia, " de Mayo de ", año
+		FinSi
+		Si mes=7 Entonces
+			Escribir dia, " de Julio de ", año
+		FinSi
+		Si mes=8 Entonces
+			Escribir dia, " de Agosto de ", año
+		FinSi
+		Si mes=10 Entonces
+			Escribir dia, " de Octubre de ", año
+		FinSi
+		Si mes=12 Entonces
+			Escribir dia, " de Diciembre de ", año
+		FinSi
+	SiNo
+		Si dia>0 y dia<30 y mes=4 o mes=6 o mes=9 o mes=11 y año>0 y año<2017 Entonces
+			Escribir "Formato válido, la fecha es " , dia ,"/", mes, "/", año
+			Si mes=4 Entonces
+				Escribir dia, " de Abril de ", año
+			FinSi
+			Si mes=6 Entonces
+				Escribir dia, " de Junio de ", año
+			FinSi
+			Si mes=9 Entonces
+				Escribir dia, " de Septiembre de ", año
+			FinSi
+			Si mes=11 Entonces
+				Escribir dia, " de Noviembre de ", año
+			FinSi
+		SiNo
+			Si dia>0 y dia<28 y mes=2 y año>0 y año<2017 Entonces
+				Escribir "Formato válido, la fecha es " , dia ,"/", mes, "/", año
+				Escribir dia, " de Febrero de ", año
+			SiNo
+				Escribir "Fecha no válida"	
+		FinSi
+	FinSi
+FinSi	
+	
+FinAlgoritmo

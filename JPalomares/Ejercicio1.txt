@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	
+	Escribir "Introduce el primer numero"
+	Leer numero1
+	Escribir "Introduce el segundo numero"
+	Leer numero2
+	
+	Escribir "Valor de suma es igual a ", numero1 + numero2
+	Escribir "Valor de resta es igual a ", numero1 - numero2
+	Escribir "Valor de divison es igual a ", numero1 / numero2
+	Escribir "Valor de producto es igual a ", numero1 * numero2
+
+
+	
+FinAlgoritmo
+�

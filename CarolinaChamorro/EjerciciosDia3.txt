@@ -1,1 +1,18 @@
 //1 - Diseña un programa que nos confirme si un año es bisiesto o no.
+
+Algoritmo bisiesto
+	
+	Escribir '¿Qué año es?'
+	Leer year
+	
+	Si year MOD 100 = 0 & year MOD 400 = 0 Entonces
+		Escribir  'Es un año bisiesto '
+	Sino
+		Escribir 'No es un año bisiesto '
+	Fin Si
+	
+	
+FinAlgoritmo
+
+//2 - Diseña un programa que imprima los numeros del 1 al 100.
+

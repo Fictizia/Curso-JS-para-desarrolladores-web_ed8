@@ -1,0 +1,13 @@
+Algoritmo hastaCien
+	
+	Para valorA<-0 Hasta 99 Con Paso 1 Hacer
+		
+		suma <- valorA +1		
+		
+		Si suma %2=0 Entonces
+			Escribir suma		
+		Fin Si		
+		
+	Fin Para
+	
+FinAlgoritmo

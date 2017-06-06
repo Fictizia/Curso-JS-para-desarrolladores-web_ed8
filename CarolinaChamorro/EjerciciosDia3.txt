@@ -1,1 +1,92 @@
 //1 - Diseña un programa que nos confirme si un año es bisiesto o no.
+
+Algoritmo bisiesto
+	
+	Escribir '¿Qué año es?'
+	Leer year
+	
+	Si year MOD 100 = 0 & year MOD 400 = 0 Entonces
+		Escribir  'Es un año bisiesto '
+	Sino
+		Escribir 'No es un año bisiesto '
+	Fin Si
+	
+	
+FinAlgoritmo
+
+//2 - Diseña un programa que imprima los numeros del 1 al 100.
+
+Algoritmo Imprimir1a100
+	
+	c <- 0
+	
+	Mientras c < 101 Hacer
+		Escribir c
+		c <- c+1
+		
+	Fin Mientras
+	
+FinAlgoritmo
+
+
+//3 - Diseña un programa que imprima los numeros del 100 al 0.
+
+Algoritmo Imprimir1a100
+	
+	c <- 100
+	
+	Mientras c >= 0 Hacer
+		Escribir c
+		c <- c-1
+		
+	Fin Mientras
+	
+	
+	
+	
+FinAlgoritmo
+
+//4 - Diseña un programa que imprima los numeros pares entre 0 y 100.
+
+
+
+Algoritmo Imprimir1anumerospares
+	
+	c <- 2
+	
+	Mientras c <= 100 Hacer
+		Escribir c
+		c <- c+2
+		F
+	Fin Mientras
+	
+FinAlgoritmo
+
+
+//5 - Diseña un programa que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
+
+
+Algoritmo Imprimir1anumerospares
+	
+	Escribir 'Escribe un número '
+	Leer valor1
+		
+	
+	c = 0
+	
+		
+	Mientras c <= 50 Hacer
+		Escribir valor1
+		
+		valor1 = valor1 + 1
+		
+		c = c + 1
+		
+	Fin Mientras
+	
+FinAlgoritmo
+
+//6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
+
+//7 - Diseña un programa que cuente las veces que aparece una determinada letra en una frase que introduciremos por teclado.
+

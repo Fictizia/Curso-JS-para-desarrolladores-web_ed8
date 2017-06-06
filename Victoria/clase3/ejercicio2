@@ -1,0 +1,8 @@
+Algoritmo ejercicio2
+	num<-0
+	Para valor=0 hasta 100 hacer
+		Escribir num
+		num=num+1
+	FinPara
+FinAlgoritmo
+�

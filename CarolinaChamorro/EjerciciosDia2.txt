@@ -1,0 +1,322 @@
+1 - Diseña un programa que lea dos números y realice los siguientes cálculos:
+
+Algoritmo CalculosVarios
+	
+	a = 8
+	b = 7
+	Resultado = a+b
+	Escribir resultado
+	
+	//15
+	
+	
+	a = 8
+	b = 7
+	Resultado = a-b
+	Escribir resultado
+	
+	//1
+	
+	a = 4
+	b = 2
+	Resultado = a/b
+	Escribir resultado
+	
+	//2
+	
+	a = 2
+	b = 5
+	Resultado = a*b
+	Escribir resultado
+	
+	//10
+	
+FinAlgoritmo
+
+//2 - Diseña un programa para calcular el porcentaje de hombres y mujeres en nuestro curso.
+
+Algoritmo Contador
+	
+	Escribir '¿Cuántos hombres hay en total?'
+	
+	Leer hombres
+	
+	Escribir '¿Cuántas mujeres hay?'
+	
+	Leer mujeres
+	
+	total = hombres + mujeres
+		
+	Escribir 'el porcentaje de mujeres es ', (mujeres*100)/total
+	
+	Escribir 'el porcentaje de hombres es ', (hombres*100)/total
+		
+	
+	
+FinAlgoritmo
+
+//3 - Diseña un programa que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
+// Opción 1 con Si,entonces o if then else
+
+
+Algoritmo Comparador
+	
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Si a1 > a2 Entonces
+		Escribir 'El primer número introducido es mayor '
+		
+	SiNo
+		Si a2 > a1 Entonces
+			Escribir  'El segundo número es mayor '
+		SiNo
+			Escribir 'Los dos números son iguales '
+		Fin Si
+		
+	Fin Si
+FinAlgoritmo
+	
+	
+// Opción 2 con Switch
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	a3 = a1 - a2
+		
+	Segun a3 Hacer
+		a3 > 0:
+			Escribir 'El primer número es mayor '
+		a3 < 0:
+			Escribir 'El segundo número es mayor '
+			
+		De Otro Modo:
+			Escribir 'Los dos números son iguales '
+			
+	Fin Segun 
+			
+FinAlgoritmo
+
+//4 - Diseña un programa que lea tres números distintos y nos diga cual de ellos es el mayor.
+	
+Algoritmo Comparador de tres números
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Escribir 'Escribe un tercer número '
+	
+	Leer a3
+	
+	Si  a1 > a2 y a1 > a3 Entonces
+		
+		Escribir 'El primer número introducido es el mayor '
+		
+	SiNo
+		Si a2 > a1 y a2 > a3 Entonces
+			Escribir 'El segundo número introducido es el mayor '
+			
+		SiNo
+			Si a3 > a1 y a3 > a2 Entonces
+				Escribir 'El tercer número introducido es el mayor '
+			SiNo
+				Si a1 = a2 y a2 = a3 Entonces
+					Escribir 'Los tres números son iguales '
+					
+				SiNo
+					Si a1 = a2 Entonces
+						Escribir 'El primer y segundo número son iguales y son los mayores '
+					SiNo
+						Si a1 = a3 Entonces
+							Escribir 'El primer y el tercer número son iguales '
+						SiNo
+							Escribir  'El segundo y el tercer número son iguales '
+						FinSi
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+	
+	
+FinAlgoritmo
+
+//5 - Diseña un programa que siga el siguiente proceso:
+
+Algoritmo Programa
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir 'Escribe otro número '
+	
+	Leer a2
+	
+	Escribir 'Escribe un tercer número '
+	
+	Leer a3
+	
+	Si a1 < 0 Entonces 
+		Escribir a1,' + ',a2,' = ',a2+a3 
+	SiNo
+		
+		Escribir a1, ' x ',a2, ' x ',a3, ' = ', a1*a2*a3
+		
+	Fin Si
+	
+FinAlgoritmo
+
+//6 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
+
+Algoritmo Descuento
+	
+	Escribir 'Escribe un precio '
+	
+	Leer precio
+	
+	Escribir '¿Estamos en los meses de invierno? Contesta con: sí/no (Minúsculas) '
+	
+	Leer a1
+	
+	Escribir '¿Es viernes o fin de semana? Contesta con: sí/no (minúsculas) '
+	
+	Leer b2
+	
+	Si a1 = 'si' y b2 = 'si' Entonces
+		Escribir 'El precio es ', precio*0.75
+	SiNo
+		Escribir 'El precio es ', precio
+		
+	Fin Si
+	
+FinAlgoritmo
+
+//7 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es positivo o negativo.
+
+Algoritmo PositivoNegativo
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Si a1 > 0 y a1 = 0 Entonces
+		Escribir 'Es un número positivo '
+	SiNo
+		Escribir 'Es un número negativo '
+	Fin Si
+	
+FinAlgoritmo
+
+//8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
+
+Algoritmo ParImpar
+	
+	Escribir 'Escribe un número '
+	
+	Leer a1
+	
+	Escribir resto
+	Si a1 MOD 2 = 0 Entonces
+		Escribir 'Es un número par '
+	SiNo
+		Escribir 'Es un número impar '
+	Fin Si
+	
+FinAlgoritmo
+
+//9 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
+
+Algoritmo Identiicador
+	
+	Escribir 'Contraseña: '
+	
+	Leer a1
+	
+	intentos = 0
+	
+	Mientras a1 != 'Fictizia mola mucho' y intentos < 2 Hacer
+		
+		Escribir '¡Error! Vuelve a introducir tu contraseña '
+		Leer a1
+		intentos = intentos +1
+		
+	Fin Mientras
+	
+	si intentos = 3 Entonces
+		Escribir 'No has acertado las contraseña '
+		
+	SiNo
+	Escribir 'Contraseña correcta '
+	FinSi
+	
+FinAlgoritmo
+
+// 10 - Diseña un algoritmo que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
+
+Algoritmo Fecha
+	
+	Escribir '¿Qué día es hoy del mes? '
+	Leer dia
+	
+	Escribir '¿En qué mes estamos?'
+	Leer mes
+	
+	Escribir '¿En que año estamos?'
+	Leer  año
+	
+	Si (dia > 0 y dia < 32) y (mes > 0 y mes < 13) y (año < 10000) Entonces
+		Escribir 'La fecha es correcta: ' dia,'/', mes, '/', año
+		Segun mes Hacer
+			1:
+				mesPalabra = 'Enero '
+			2:
+				mesPalabra = 'Febrero '
+			3:
+				mesPalabra = 'Marzo '
+			4:
+				mesPalabra = 'Abril '
+			5:
+				mesPalabra = 'Mayo '
+			6:
+				mesPalabra = 'Junio '
+			7:
+				mesPalabra = 'Julio '
+			8:
+				mesPalabra = 'Agosto '
+			9:
+				mesPalabra = 'Septiembre '
+			10:
+				mesPalabra = 'Octubre '
+			11:
+				mesPalabra = 'Noviembre '
+				
+			De Otro Modo:
+			mesPalabra = 'Diciembre'
+				
+		Fin Segun
+			Escribir dia, ' de ', mesPalabra, 'del ', año 
+	SiNo
+		Escribir 'La fecha no es correcta'
+	Fin Si
+	
+FinAlgoritmo
+
+//11 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.

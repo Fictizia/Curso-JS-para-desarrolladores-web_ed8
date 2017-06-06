@@ -183,7 +183,25 @@ Valor de su producto
 
 8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
 
-	// Tu solución
+	Algoritmo ejer8
+		Repetir
+
+			Escribir "Dime un número al azar"
+			Leer numero1
+
+
+			Si numero1 MOD 2 = 0 Entonces
+				Escribir "El número " , numero1 , " es par"
+			FinSi
+
+			Si numero1 MOD 2 <> 0 Entonces
+				Escribir "Tu número " , numero1 , " es impar"
+			FinSi
+
+		Hasta que numero1=0 
+
+	FinAlgoritmo
+	
 9 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
 
 Características:

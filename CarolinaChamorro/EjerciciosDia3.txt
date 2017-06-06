@@ -88,5 +88,5 @@ FinAlgoritmo
 
 //6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 
-
+//7 - Diseña un programa que cuente las veces que aparece una determinada letra en una frase que introduciremos por teclado.
 

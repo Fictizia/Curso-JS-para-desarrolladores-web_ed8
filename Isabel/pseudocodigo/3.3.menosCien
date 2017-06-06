@@ -1,0 +1,8 @@
+Algoritmo menosCien
+	
+	Para valorA<-99 Hasta 0 Con Paso -1 Hacer
+		suma <- valorA +1
+		Escribir suma
+	Fin Para
+	
+FinAlgoritmo

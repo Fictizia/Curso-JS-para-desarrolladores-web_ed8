@@ -2,31 +2,31 @@
 
 Algoritmo CalculosVarios
 	
-	a = 8
-	b = 7
-	Resultado = a+b
+	valor1 = 8
+	valor2 = 7
+	Resultado = valor1+valor2
 	Escribir resultado
 	
 	//15
 	
 	
-	a = 8
-	b = 7
-	Resultado = a-b
+	valor1 = 8
+	valor2 = 7
+	Resultado = valor1-valor2
 	Escribir resultado
 	
 	//1
 	
-	a = 4
-	b = 2
-	Resultado = a/b
+	valor1 = 4
+	valor2 = 2
+	Resultado = valor1/valor2
 	Escribir resultado
 	
 	//2
 	
-	a = 2
-	b = 5
-	Resultado = a*b
+	valor1 = 2
+	valor2 = 5
+	Resultado = valor1*valor2
 	Escribir resultado
 	
 	//10
@@ -64,17 +64,17 @@ Algoritmo Comparador
 	
 	Escribir 'Escribe un número '
 	
-	Leer a1
+	Leer valor1
 	
 	Escribir 'Escribe otro número '
 	
-	Leer a2
+	Leer valor2
 	
-	Si a1 > a2 Entonces
+	Si valor1 > valor2 Entonces
 		Escribir 'El primer número introducido es mayor '
 		
 	SiNo
-		Si a2 > a1 Entonces
+		Si valor2 > valor1 Entonces
 			Escribir  'El segundo número es mayor '
 		SiNo
 			Escribir 'Los dos números son iguales '
@@ -88,18 +88,18 @@ FinAlgoritmo
 	
 	Escribir 'Escribe un número '
 	
-	Leer a1
+	Leer valor1
 	
 	Escribir 'Escribe otro número '
 	
-	Leer a2
+	Leer valor2
 	
-	a3 = a1 - a2
+	valor3 = valor1 - valor2
 		
-	Segun a3 Hacer
-		a3 > 0:
+	Segun valor3 Hacer
+		valor3 > 0:
 			Escribir 'El primer número es mayor '
-		a3 < 0:
+		valor3 < 0:
 			Escribir 'El segundo número es mayor '
 			
 		De Otro Modo:
@@ -115,36 +115,36 @@ Algoritmo Comparador de tres números
 	
 	Escribir 'Escribe un número '
 	
-	Leer a1
+	Leer valor1
 	
 	Escribir 'Escribe otro número '
 	
-	Leer a2
+	Leer valor2
 	
 	Escribir 'Escribe un tercer número '
 	
-	Leer a3
+	Leer valor3
 	
-	Si  a1 > a2 y a1 > a3 Entonces
+	Si  valor1 > valor2 y valor1 > valor3 Entonces
 		
 		Escribir 'El primer número introducido es el mayor '
 		
 	SiNo
-		Si a2 > a1 y a2 > a3 Entonces
+		Si valor2 > valor1 y valor2 > valor3 Entonces
 			Escribir 'El segundo número introducido es el mayor '
 			
 		SiNo
-			Si a3 > a1 y a3 > a2 Entonces
+			Si valor3 > valor1 y valor3 > valor2 Entonces
 				Escribir 'El tercer número introducido es el mayor '
 			SiNo
-				Si a1 = a2 y a2 = a3 Entonces
+				Si valor1 = valor2 y valor2 = valor3 Entonces
 					Escribir 'Los tres números son iguales '
 					
 				SiNo
-					Si a1 = a2 Entonces
+					Si valor1 = valor2 Entonces
 						Escribir 'El primer y segundo número son iguales y son los mayores '
 					SiNo
-						Si a1 = a3 Entonces
+						Si valor1 = valor3 Entonces
 							Escribir 'El primer y el tercer número son iguales '
 						SiNo
 							Escribir  'El segundo y el tercer número son iguales '
@@ -164,21 +164,21 @@ Algoritmo Programa
 	
 	Escribir 'Escribe un número '
 	
-	Leer a1
+	Leer valor1
 	
 	Escribir 'Escribe otro número '
 	
-	Leer a2
+	Leer valor2
 	
 	Escribir 'Escribe un tercer número '
 	
-	Leer a3
+	Leer valor3
 	
-	Si a1 < 0 Entonces 
-		Escribir a1,' + ',a2,' = ',a2+a3 
+	Si valor1 < 0 Entonces 
+		Escribir valor1,' + ',valor2,' = ',valor2+valor3 
 	SiNo
 		
-		Escribir a1, ' x ',a2, ' x ',a3, ' = ', a1*a2*a3
+		Escribir valor1, ' x ',valor2, ' x ',valor3, ' = ', valor1*valor2*valor3
 		
 	Fin Si
 	
@@ -192,11 +192,11 @@ Algoritmo Descuento
 	
 	Leer precio
 	
-	Escribir '¿Estamos en los meses de invierno? Contesta con: sí/no (Minúsculas) '
+	Escribir '¿Estamos en los meses de invierno? Contesta con: si/no (Minúsculas) '
 	
 	Leer a1
 	
-	Escribir '¿Es viernes o fin de semana? Contesta con: sí/no (minúsculas) '
+	Escribir '¿Es viernes o fin de semana? Contesta con: si/no (Minúsculas) '
 	
 	Leer b2
 	

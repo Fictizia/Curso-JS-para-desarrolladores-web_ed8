@@ -57,12 +57,36 @@ Algoritmo Imprimir1anumerospares
 	Mientras c <= 100 Hacer
 		Escribir c
 		c <- c+2
-		
+		F
 	Fin Mientras
 	
 FinAlgoritmo
 
 
 //5 - Diseña un programa que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
+
+
+Algoritmo Imprimir1anumerospares
+	
+	Escribir 'Escribe un número '
+	Leer valor1
+		
+	
+	c = 0
+	
+		
+	Mientras c <= 50 Hacer
+		Escribir valor1
+		
+		valor1 = valor1 + 1
+		
+		c = c + 1
+		
+	Fin Mientras
+	
+FinAlgoritmo
+
+//6 - Diseña un programa que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
+
 
 

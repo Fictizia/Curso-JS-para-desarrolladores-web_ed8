@@ -262,9 +262,6 @@ Algoritmo Identiicador
 	
 	si intentos = 3 Entonces
 		Escribir 'No has acertado las contraseña '
-		
-	SiNo
-	Escribir 'Contraseña correcta '
 	FinSi
 	
 FinAlgoritmo

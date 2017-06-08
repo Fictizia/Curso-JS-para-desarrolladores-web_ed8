@@ -1,3 +1,11 @@
 console.time("Tiempo name");
  console.log(name);
- console.timeEnd("Tiempo name");
+ console.info(name);
+ console.warn(name);
+console.timeEnd("Tiempo name");
+
+
+console.time("Tiempo name");
+ console.info(name);
+console.timeEnd("Tiempo name");
+ //por separado

@@ -1,11 +1,15 @@
 Algoritmo secuencia50numeros
-	
+		
 	Escribir "Introduce un numero" 
 	Leer numero
 	
-	Para numeroInicial=numero Hasta numero+49 Con Paso 1 Hacer
-		suma=numeroInicial + 1
-		Escribir suma
+	numeroFinal = numero+49
+		
+	Para numero=numero Hasta numeroFinal Con Paso 1 Hacer
+		solucion=numero + 1
+		Si solucion %2!=0 Entonces
+			Escribir solucion	
+		Fin Si
 	Fin Para
-	
+			
 FinAlgoritmo

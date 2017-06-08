@@ -1,0 +1,11 @@
+ console.time("Tiempo name");
+ console.log('%c name ', 'background: #grey; color: #pink; font-size:20px;');
+ console.timeEnd("Tiempo name");
+
+ console.time("Tiempo name");
+ console.log('%c name ', 'background: grey; color: pink; font-size:20px;');
+ console.timeEnd("Tiempo name");
+ 
+ console.time("Tiempo name");
+ console.warn('%c name ', 'background: red; color: yellow; font-size:30px;');
+ console.timeEnd("Tiempo name");

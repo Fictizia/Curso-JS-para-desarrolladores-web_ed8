@@ -77,7 +77,7 @@ Algoritmo Imprimir1anumerospares
 		
 	Mientras % 2 = 0 Hacer
 		valor1 <- valor1 + 1
-		c <- controlador + 1
+		c <- c + 1
 	Sino
 		Escribir valor1
 		valor1 <- valor1 + 1

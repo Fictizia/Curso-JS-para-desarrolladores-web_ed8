@@ -19,9 +19,9 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
 
 	var nombre = "Soy Carolina";
-	console.time("%c presentación", 'background: #45FFFF; color: #FFF; font-size:45px;');
-	console.log(Carolina);
-	console.info(Carolina);
+	console.time('%c presentación', 'background: #45FFFF; color: #FFF; font-size:45px;');
+	console.log('%c Carolina', 'font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;');
+	console.info('%c Carolina', ');
 	console.warn(Carolina);
 	console.timeEnd("presentación");
 

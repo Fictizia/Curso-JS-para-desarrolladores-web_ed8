@@ -1,0 +1,19 @@
+Algoritmo bisiesto
+	Escribir "Dime un número"
+	
+	Leer year
+	
+	Si year %4=0 Entonces
+		
+		Si year %100 !=0 Entonces
+			Escribir "El número es  bisiesto"	
+		Sino
+			Escribir "El número no es bisiesto" 
+		Fin si
+		
+	Sino
+		Escribir "El número no es bisiesto" 	
+			
+	Fin Si
+	
+FinAlgoritmo

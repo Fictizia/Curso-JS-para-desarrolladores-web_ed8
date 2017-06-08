@@ -1,0 +1,23 @@
+Algoritmo comparacion
+	
+	Escribir "Dime un número"
+	
+	Leer valor1 
+	
+	Escribir "Dime otro número"
+	
+	Leer valor2 
+	
+	Si valor1 > valor2 Entonces
+		Escribir valor1 "es el mayor"
+	Sino
+		Escribir valor1 "es el menor"
+	Fin Si
+	
+	
+	Si valor1 = valor2 Entonces
+		Escribir "Son iguales"
+	Fin Si
+	
+FinAlgoritmo
+

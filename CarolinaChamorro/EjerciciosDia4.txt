@@ -21,8 +21,8 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 	var nombre = "Soy Carolina";
 	console.time('%c presentación', 'background: #45FFFF; color: #FFF; font-size:45px;');
 	console.log('%c Carolina', 'font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;');
-	console.info('%c Carolina', ');
-	console.warn(Carolina);
+	console.info('%c Carolina', 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.warn('%c Carolina);
 	console.timeEnd("presentación");
 
 4 - Agrupa cada tipo de mensaje y añade un contador de tiempo por cada grupo.

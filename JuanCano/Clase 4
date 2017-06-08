@@ -1,0 +1,35 @@
+1 - Utiliza .assert para controlar cuando se muestra tu nombre por consola.
+    // Tu solución
+    
+     var controlador = false;
+     console.assert(controlador, "Soy Juan");
+     
+     
+     
+     
+     
+     
+2 - Crea un script que nos permita calcular el tiempo que se necesita para realizar la siguientes acciones.
+
+Especificaciones:
+Imprimir tu nombre usando console.log, console.info, console.warn
+	// Tu solución
+        console.time("presentacion");
+        console.log("Juan");
+        console.info("Juan");
+        console.warn("Juan");
+        console.error("Juan");
+        console.timeEnd("presentacion");
+        
+        
+        
+3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
+
+	// Tu solución     
+  
+        console.time("presentacion");
+        console.log('%c Juan ', 'background: #80ba27; color: #00FFF; font-size:54px;');
+        console.info('%c Juan ', 'background: #3EBDFF; color: #FFF; font-size:25px;');
+        console.warn("Juan");
+        console.error("Juan");
+        console.timeEnd("presentacion");

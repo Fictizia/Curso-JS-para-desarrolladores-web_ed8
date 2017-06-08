@@ -1,0 +1,19 @@
+Algoritmo tresnumeros
+	
+	Escribir "Dame 3 numeros"
+	
+	Leer A,B,C
+	
+	Si a < 0 Entonces
+		sumados <- B + C 
+	Sino
+		multiplicado <- A * B * C
+	Fin Si
+	
+	Si A < 0 Entonces
+		Escribir sumados
+	Sino
+		Escribir multiplicado
+	Fin Si
+	
+FinAlgoritmo

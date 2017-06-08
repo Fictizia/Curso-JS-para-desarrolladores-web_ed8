@@ -183,23 +183,122 @@ Valor de su producto
 
 8 - Diseña un algoritmo que al introducir un numero por teclado. Que nos diga si es par o impar.
 
-	// Tu solución
+	Algoritmo ejer8
+		Repetir
+
+			Escribir "Dime un número al azar"
+			Leer numero1
+
+
+			Si numero1 MOD 2 = 0 Entonces
+				Escribir "El número " , numero1 , " es par"
+			FinSi
+
+			Si numero1 MOD 2 <> 0 Entonces
+				Escribir "Tu número " , numero1 , " es impar"
+			FinSi
+
+		Hasta que numero1=0 
+
+	FinAlgoritmo
+	
 9 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
 
-Características:
-La palabra clave es "Fictizia mola mucho"
-Solo existen tres intentos
-Si se pasan los tres intentos. Se despliega un mensaje informativo.
-	// Tu solución
+	Algoritmo ejer9
+		intentos<-0
+
+		Repetir
+		Escribir "Contraseña de Acceso a Fictizia..."
+		Leer contrasena
+
+		Si contrasena = "Fictizia mola mucho" Entonces
+			Escribir "¡Te estabamos esperando, adelante!"
+		Sino Escribir "De momento no molas nada"
+			intentos<-(intentos+1)
+		FinSi
+
+	Hasta Que intentos=4
+
+		Si intentos=4 Entonces
+			Escribir "Ya no molas nada de nada"
+		FinSi
+
+	FinAlgoritmo
 	
 10 - Diseña un algoritmo que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
 
-Características:
-El usuario introduce tres números (día, mes, año)
-Validar la fecha. En caso de error incluir un mensaje informativo.
-Después de validar, devolvemos la fecha en formato DD/MM/AAAA
-Convertimos el número del mes, en el nombre del mes real y devolvemos la fecha en el siguiente formato ( DD de MES de AAAA)
-	// Tu solución
+	Algoritmo ejer10
+
+		Escribir "Dime un día con el formato DD"
+		Leer dia
+
+		Escribir "Dime un mes con el formato MM"
+		Leer mes
+
+		Escribir "Dime un año con el formato AAAA"
+		Leer año
+
+		Si dia>1 y dia<31 y mes>1 y mes<12 y año>1 y año<9999 Entonces
+			Escribir "Tu fecha " dia "/" mes "/" año " es válida"
+		SiNo
+			Escribir "Tu fecha no es válida"
+
+		FinSi
+
+		Escribir "Ahora vamos a convertir tu fecha en un formato más amigable"
+
+
+		Si mes=1 Entonces
+			Escribir "Tu fecha es el" dia " de Enero del "  año " "
+		Fin Si
+
+		Si mes=2 Entonces
+			Escribir "Tu fecha es el" dia " de Febrero del " año " "
+		Fin Si
+
+		Si mes=3 Entonces
+			Escribir "Tu fecha es el" dia " de Marzo del " año " "
+		Fin Si
+
+		Si mes=4 Entonces
+			Escribir "Tu fecha es el" dia " de Abril del " año " "
+		Fin Si
+
+		Si mes=5 Entonces
+			Escribir "Tu fecha es el" dia " de Mayo del " año " "
+		Fin Si
+
+		Si mes=6 Entonces
+			Escribir "Tu fecha es el" dia " de Junio del " año " "
+		Fin Si
+
+		Si mes=7 Entonces
+			Escribir "Tu fecha es el" dia " de Julio del " año " "
+		Fin Si
+
+		Si mes=8 Entonces
+			Escribir "Tu fecha es el" dia " de Agosto del " año " "
+		Fin Si
+
+		Si mes=9 Entonces
+			Escribir "Tu fecha es el" dia " de Septiembre del " año " "
+		Fin Si
+
+		Si mes=10 Entonces
+			Escribir "Tu fecha es el" dia " de Octubre del " año " "
+		Fin Si
+
+		Si mes=11 Entonces
+			Escribir "Tu fecha es el" dia " de Noviembre del " año " "
+		Fin Si
+
+		Si mes=12 Entonces
+			Escribir "Tu fecha es el" dia " de Diciembre del " año " "
+		Fin Si
+
+
+
+	FinAlgoritmo
 	
 11 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.
 

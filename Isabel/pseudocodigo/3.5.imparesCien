@@ -1,0 +1,19 @@
+Algoritmo imparesCien
+	
+	Escribir "Dime un número"
+	
+	Leer valorA
+	
+	valorB <- valorA + 49
+	
+	Para valorA<-valorA Hasta valorB Con Paso 1 Hacer
+		
+		resultado <- valorA +1	
+		
+		Si resultado %2!=0 Entonces
+			Escribir resultado
+		Fin Si
+		
+	Fin Para
+	
+FinAlgoritmo

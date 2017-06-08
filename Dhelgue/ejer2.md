@@ -3,18 +3,22 @@
 Caracteristicas de un año bisiesto:
 Tiene que ser divisible entre 4 y no tiene que ser divisible entre 100
 O puede ser divisble entre 100 y entre 400
-	Algoritmo ejer1_clase3
-
-		Escribir "Dime un año al azar"
-		Leer ano
-
-		Si ano MOD 100 = 0 Y ano MOD 400 = 0 Entonces
-			Escribir "Tu año es bisiesto"
-		Sino
-			Escribir "Tu año no es bisiesto"
-		FinSi
-
-	FinAlgoritmo
+	
+	Algoritmo Bisiesto
+	
+	Escribir "Dime un año cualquiera..."
+	Leer year
+	
+	Si year MOD 4 = 0 y (year MOD 100 <> 0) o ((year MOD 100 = 0) y (year MOD 400 = 0))Entonces
+		Escribir "Tu año es bisiesto"
+	SiNo
+		Escribir "Tu año no es bisiesto"
+	FinSi
+	
+	
+	
+	
+FinAlgoritmo
 
 2 - Diseña un programa que imprima los numeros del 1 al 100.
 

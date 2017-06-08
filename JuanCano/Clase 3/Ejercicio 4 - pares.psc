@@ -1,11 +1,8 @@
-Algoritmo Imprimir1anumerospares
+Algoritmo secuencia_pasos
 	
-	numeropar <- 2
-	
-	Mientras numeropar <= 100 Hacer
-		Escribir numeropar
-		numeropar <- numeropar+2
-		
-	Fin Mientras
+	Para numeroMenor=0 Hasta 99 Con Paso 2 Hacer
+		suma=numeroMenor + 2
+		Escribir suma
+	Fin Para
 	
 FinAlgoritmo

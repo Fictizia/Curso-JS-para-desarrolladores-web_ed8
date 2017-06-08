@@ -1,0 +1,3 @@
+console.time("Tiempo name");
+ console.log(name);
+ console.timeEnd("Tiempo name");

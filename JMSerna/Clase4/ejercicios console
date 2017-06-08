@@ -1,0 +1,65 @@
+1
+
+var chema = false;
+console.assert(chema, "el nombre es igual a false")
+
+ - - - - -
+ 
+ 
+ 2
+ 
+console.time("medicion de consoles");
+console.log("chema");
+console.warn("chema");
+console.error("chema");
+console.timeEnd("medicion de consoles");
+
+ - - - - - 
+ 
+ 3  
+ 
+console.time("medicion de consoles");
+console.log("%c chema", "background:cyan;color:white;font-size:20px");
+console.warn("%c chema", "background:orange;color:yellow;font-size:20px");
+console.error("%c chema", "background:red;color:brown;font-size:20px");
+console.timeEnd("medicion de consoles");
+
+
+- - - - -
+
+4
+
+console.time("console log normal");
+console.log("%c chema", "background:cyan;color:white;font-size:20px");
+console.timeEnd("console log normal");
+console.time("console log warning");
+console.warn("%c chema", "background:orange;color:yellow;font-size:20px");
+console.timeEnd("console log warning");
+console.time("console log error")
+console.error("%c chema", "background:red;color:brown;font-size:20px");
+console.timeEnd("console log error");
+
+ - - - - - -
+
+5
+
+var alumnos =[
+    {nombre: "alumno1", posicion:"1"},
+
+    {nombre: "alumno2", posicion:"2"},
+
+    {nombre: "alumno3", posicion:"3"},
+
+    {nombre: "alumno4", posicion:"4"},
+
+    {nombre: "alumno5", posicion:"5"},
+
+    {nombre: "alumno6", posicion:"6"},
+
+    {nombre: "alumno7", posicion:"7"},
+
+    {nombre: "alumno8", posicion:"8"},
+
+
+];
+console.table(alumnos);

@@ -6,7 +6,18 @@
  
  2-
  
- 
+  console.time("Medicion tiempo calcular nombre");
+  console.log("Javier");
+  console.timeEnd("Medicion tiempo calcular nombre");
+  
+  console.time("Medicion tiempo calcular nombre");
+  console.info("Javier");
+  console.timeEnd("Medicion tiempo calcular nombre");
+  
+  console.time("Medicion tiempo calcular nombre");
+  console.warn("Javier");
+  console.timeEnd("Medicion tiempo calcular nombre");
+
  3- 
  
  

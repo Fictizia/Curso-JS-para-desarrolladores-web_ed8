@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	
+
+	Escribir "Numero 1"
+	Leer numero1
+	Escribir "Numero 2"
+	Leer numero2
+	
+	si numero1 > numero2 Entonces
+		
+		escribir "El numero 1 es mayor que el numero 2"
+		
+	FinSi
+	
+	
+	si numero2 > numero1 Entonces
+	
+		escribir "El numero 2 es mayor que el numero 1"
+	FinSi
+
+
+	si numero1 = numero2 Entonces
+		
+		escribir "Los numeros son iguales"
+	FinSi
+	
+	
+	
+	
+FinAlgoritmo

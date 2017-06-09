@@ -1,11 +1,11 @@
-1- 
+1 - Utiliza .assert para controlar cuando se muestra tu nombre por consola.
 
  var nombre = false;
  console.assert(nombre, "Javier");
  
  
- 2-
- 
+2 - Crea un script que nos permita calcular el tiempo que se necesita para realizar la siguientes acciones.
+
   console.time("Medicion tiempo calcular nombre");
   console.log("Javier");
   console.timeEnd("Medicion tiempo calcular nombre");
@@ -18,10 +18,28 @@
   console.warn("Javier");
   console.timeEnd("Medicion tiempo calcular nombre");
 
- 3- 
+3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
+
+ console.time("Medicion tiempo calcular nombre");
+ console.log('%c Javier! ', 'background: purple; color: white; font-size:25px;');
+ console.timeEnd("Medicion tiempo calcular nombre");
  
  
- 4- 
+4 - Agrupa cada tipo de mensaje y añade un contador de tiempo por cada grupo.
+
+
  
  
- 5-
+ 
+5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.
+
+var clase = [
+    { nombre: "Javier", mesa: ".js" },
+    { nombre: "Dunno", mesa: "Derecha" },
+    { nombre: "Dunno 2", mesa: "Derecha 2" },
+    { nombre: "Dunno enfrente", mesa: "Enfrente" },
+    { nombre: "Dunno enfrente derecha", mesa: "Enfrente derecha" },
+    { nombre: "Dunno Enfrente derecha 2", mesa: "Enfrente derecha 2" }
+];
+
+console.table("clase");

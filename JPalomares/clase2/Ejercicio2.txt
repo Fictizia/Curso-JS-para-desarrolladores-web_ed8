@@ -1,0 +1,15 @@
+Algoritmo sin_titulo
+	
+
+	Escribir "Numero de mujeres"
+	Leer mujeres
+	Escribir "Numero de Hombres"
+	Leer hombres
+	total <- mujeres + hombres
+	
+	Escribir "El porcentaje de mujeres es ", (mujeres*100)/total ,"%"
+	
+	Escribir "El porcentaje de hombres es ", (hombres*100)/total ,"%"
+	
+	
+FinAlgoritmo

@@ -1,0 +1,16 @@
+1- 
+
+ var nombre = false;
+ console.assert(nombre, "Javier");
+ 
+ 
+ 2-
+ 
+ 
+ 3- 
+ 
+ 
+ 4- 
+ 
+ 
+ 5-

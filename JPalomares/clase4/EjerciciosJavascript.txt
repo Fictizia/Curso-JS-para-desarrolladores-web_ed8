@@ -1,0 +1,82 @@
+Ejercicio 1:
+
+Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos:
+
+Objetivos:
+
+Captura el nombre del usuario usando prompt
+Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador".
+En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y calculando el tiempo que tarda en realizar la operación
+En caso negativo mostraremos un alert informativo.
+
+// Tu solución
+
+var nombre = prompt("¿Como te llamas?");
+
+var navegador = prompt("deseas comprobar lo rápido que funciona tu navegador?");
+
+if (navegador === "si")
+{
+ console.time("Medicion tiempo calcular nombre");
+ console.log('%c ' + nombre + ' ', 'background: purple; color: white; font-size:25px;');
+ console.timeEnd("Medicion tiempo calcular nombre");
+
+}
+
+else {
+
+alert("No quieres mostrar la velocidad de tu navegador, adios pringao");
+
+
+}
+
+----
+
+Ejercicios
+
+1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos:
+
+Valor de su suma
+Valor de su resta
+Valor de su division
+Valor de su producto
+
+// Tu solución
+
+var numero1 = prompt("Introduce el primer número");
+var numero2 = prompt("Introduce el segundo número");
+
+var suma = parseInt(numero1) + parseInt(numero2);
+var resta = parseInt(numero1) - parseInt(numero2);
+var division = parseInt(numero1) / parseInt(numero2);
+var producto = parseInt(numero1) * parseInt(numero2);
+
+console.log(suma);
+console.log(resta);
+console.log(division);
+console.log(producto);
+
+
+
+2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso.
+
+Trucos:
+Calcular porcentajes (segmento*100)/total
+
+// Tu solución
+
+var hombres = prompt("Introduce el numero de hombres");
+var mujeres = prompt("Introduce el numero de mujeres");
+
+var total = parseInt(hombres) + parseInt(mujeres);
+
+var porcentaje = (parseInt(mujeres)*100)/total
+
+
+console.log('El porcentaje de mujeres es de ' + porcentaje + '%');
+
+
+
+
+
+

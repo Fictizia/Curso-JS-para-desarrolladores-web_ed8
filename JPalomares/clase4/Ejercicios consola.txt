@@ -35,11 +35,11 @@
 
 var clase = [
     { nombre: "Javier", mesa: ".js" },
-    { nombre: "Dunno", mesa: "Derecha" },
-    { nombre: "Dunno 2", mesa: "Derecha 2" },
-    { nombre: "Dunno enfrente", mesa: "Enfrente" },
-    { nombre: "Dunno enfrente derecha", mesa: "Enfrente derecha" },
-    { nombre: "Dunno Enfrente derecha 2", mesa: "Enfrente derecha 2" }
+    { nombre: "2", mesa: "Derecha" },
+    { nombre: "3 derecha", mesa: "Derecha 2" },
+    { nombre: "4 enfrente", mesa: "Enfrente" },
+    { nombre: "5 enfrente derecha", mesa: "Enfrente derecha" },
+    { nombre: "6 Enfrente derecha 2", mesa: "Enfrente derecha 2" }
 ];
 
 console.table("clase");

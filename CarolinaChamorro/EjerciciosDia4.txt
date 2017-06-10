@@ -29,3 +29,9 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 
 
 //5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.
+
+//1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos: Valor de su suma, Valor de su resta, Valor de su division, Valor de su producto
+
+
+	
+//2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso. Hint: Calcular porcentajes (segmento*100)/total

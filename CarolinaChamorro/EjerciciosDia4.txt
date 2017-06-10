@@ -1,10 +1,10 @@
 
-1 - Utiliza .assert para controlar cuando se muestra tu nombre por consola.
+//1 - Utiliza .assert para controlar cuando se muestra tu nombre por consola.
 
 var controlador = false;
 	console.assert(controlador,  "Soy Carolina");
   
-2 - Crea un script que nos permita calcular el tiempo que se necesita para realizar la siguientes acciones.
+//2 - Crea un script que nos permita calcular el tiempo que se necesita para realizar la siguientes acciones.
 
 Especificaciones:
 Imprimir tu nombre usando console.log, console.info, console.warn
@@ -16,16 +16,16 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 	console.warn(Carolina);
 	console.timeEnd("presentación");
 
-3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
+//3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
 
 	var nombre = "Soy Carolina";
 	console.time('%c presentación', 'background: #45FFFF; color: #FFF; font-size:45px;');
 	console.log('%c Carolina', 'font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;');
 	console.info('%c Carolina', 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
-	console.warn('%c Carolina);
+	console.warn('%c Carolina', 'font-weight: bold; background-color: #FF3D66; font-size:59px;');
 	console.timeEnd("presentación");
 
-4 - Agrupa cada tipo de mensaje y añade un contador de tiempo por cada grupo.
+//4 - Agrupa cada tipo de mensaje y añade un contador de tiempo por cada grupo.
 
 
-5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.
+//5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.

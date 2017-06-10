@@ -19,16 +19,71 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 //3 - Partiendo del ejercicio anterior mejora los estilos de cada mensaje usando estilos.
 
 	var nombre = "Soy Carolina";
-	console.time('%c presentación', 'background: #45FFFF; color: #FFF; font-size:45px;');
-	console.log('%c Carolina', 'font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;');
-	console.info('%c Carolina', 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
-	console.warn('%c Carolina', 'font-weight: bold; background-color: #FF3D66; font-size:59px;');
+	console.time('background: #45FFFF; color: #FFF; font-size:45px;');
+	console.log(nombre, "%c %s", "font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;");
+	console.info(nombre, "%c %s", 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.warn(nombre, "%c %s", 'font-weight: bold; background-color: #FF3D66; font-size:59px;');
 	console.timeEnd("presentación");
 
 //4 - Agrupa cada tipo de mensaje y añade un contador de tiempo por cada grupo.
 
+	var nombre = "Soy Carolina";
+	console.time("presentación")
+	
+	//console.log
+    	console.group("grupo console.log");
+    	console.time("presentación")
+	console.log(nombre, "%c %s", "font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;");
+	console.timeEnd("presentación")
+    	console.groupEnd();
+	
+	
+	//conaole.info
+	console.group("grupo console.info");
+    	console.time("presentación")
+	console.info(nombre, "%c %s", 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.timeEnd("presentación")
+   	console.groupEnd();
+	
+	
+	//console.warn
+	console.group("grupo console.warn");
+    	console.time("presentación")
+	console.info(nombre, "%c %s", 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.timeEnd("presentación")
+   	console.groupEnd()
+	
+	console.timeEnd("presentación");
 
 //5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.
+
+var compañeros = [
+    { nombre: "compañeros1", extension: "1" },
+    { nombre: "compañeros2", extension: "2" },
+    { nombre: "compañeros3", extension: "3" },
+    { nombre: "compañeros4", extension: "4" },
+    { nombre: "compañeros5", extension: "5" },
+    { nombre: "compañeros6", extension: "6" },
+    { nombre: "compañeros7", extension: "7" },
+    { nombre: "compañeros8", extension: "8" },
+    { nombre: "compañeros9", extension: "9" }
+];
+
+console.table(lenguajes);
+
+
+1 - Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos:
+
+Objetivos:
+
+Captura el nombre del usuario usando prompt
+Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador".
+En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y calculando el tiempo que tarda en realizar la operación
+En caso negativo mostraremos un alert informativo.
+Versión 1:
+
+	// Tu solución
+Versión 2:
 
 //1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos: Valor de su suma, Valor de su resta, Valor de su division, Valor de su producto
 

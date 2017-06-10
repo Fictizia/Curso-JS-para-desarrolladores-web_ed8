@@ -159,5 +159,25 @@ FinAlgoritmo
 	
 //9 - Diseña un programa que simula cien tiradas de dos dados y contar las veces que entre los dos suman 10.
 
+Algoritmo dados
+	
+	c <- 0
+	aciertos <- 0
+	
+	Mientras c < 100 Hacer
+		
+		dado1 = azar(7)
+		dado2 = azar(7)
+		
+		tirada = dado1 + dado2
+		
+		Si tirada = 10 Entonces
+		c = c + 1
+		
+	Fin Si
+Fin Mientras
 
+Escribir 'Se sumo entre los dos dados 10 unas ', c, ' veces.'
+	
+FinAlgoritmo
 

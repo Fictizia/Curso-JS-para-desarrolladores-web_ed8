@@ -72,18 +72,38 @@ var compañeros = [
 console.table(lenguajes);
 
 
-1 - Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos:
+// 6- Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos: 1-Captura el nombre del usuario usando prompt, 2-Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador", 3-En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y 4-calculando el tiempo que tarda en realizar la operación
 
-Objetivos:
+var nombre = prompt("¿Quién eres?");
+var respuesta = confirm("¿Quieres comprobar lo rapido que funciona tu navegador?");
+if (respuesta === true) {
+	//console.log
+    	console.group("grupo console.log");
+    	console.time("presentación")
+	console.log(nombre, "%c %s", "font-family: Arial, Helvetica, sans-serif; color: #B1251E; font-weight: bold; font-size:34px;");
+	console.timeEnd("presentación")
+    	console.groupEnd();
+	
+	
+	//conaole.info
+	console.group("grupo console.info");
+    	console.time("presentación")
+	console.info(nombre, "%c %s", 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.timeEnd("presentación")
+   	console.groupEnd();
+	
+	
+	//console.warn
+	console.group("grupo console.warn");
+    	console.time("presentación")
+	console.info(nombre, "%c %s", 'font-weight: bold; background-color: #FFFF66; font-size:29px;');
+	console.timeEnd("presentación")
+   	console.groupEnd()
 
-Captura el nombre del usuario usando prompt
-Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador".
-En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y calculando el tiempo que tarda en realizar la operación
-En caso negativo mostraremos un alert informativo.
-Versión 1:
+} else {
+alert("No quiere saberlo");
+}
 
-	// Tu solución
-Versión 2:
 
 //1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos: Valor de su suma, Valor de su resta, Valor de su division, Valor de su producto
 

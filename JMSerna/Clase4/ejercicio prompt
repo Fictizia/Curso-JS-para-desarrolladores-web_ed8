@@ -1,0 +1,11 @@
+
+var respuesta = prompt("Comprobar lo rápido que funciona su navegador");
+var nombre = prompt("Cuál es tu nombre?");
+
+if(respuesta==="Si" || respuesta==="si"){
+ 	console.time("inicio tiempo de respuesta");
+	console.log("%c"+nombre,"background:red;color:white;font-size:20px;padding:5px;border-radius:5px;border-bottom:2px solid brown;");
+	console.timeEnd("fin tiempo de respuesta");
+}else{
+	alert("el valor a insertar no es correcto");
+}

@@ -1,0 +1,70 @@
+var victoria = false;
+ console.assert(victoria, "\"victoria\" es igual a \"true\"");
+
+---
+
+
+console.time("nombre");
+ 
+console.log("victoria")
+ 
+console.timeEnd("nombre");
+
+console.time("nombre");
+ 
+console.warn("victoria")
+ 
+console.timeEnd("nombre");
+
+console.time("nombre");
+ 
+console.info("victoria")
+ 
+console.timeEnd("nombre");
+
+---
+
+console.log('%c victoria ', 'background-color:lightgray; color:turquoise; font-size:24px; font-weight: bold; border-radius:5px;')
+console.warn('%c victoria ', 'background-color:purple; color:yellow; font-size:18px; line-height:24px; font-weight: bolder; border:1px solid yellow;')
+console.info('%c victoria ', 'background-color:#c5c5c5; color:#b1b1b1; font-size:18px; line-height:24px; font-family:courier; border-radius:10px;')
+
+---
+
+
+console.time("nombre");
+ 
+console.log('%c victoria ', 'background-color:lightgray; color:turquoise; font-size:24px; font-weight: bold; border-radius:5px;')
+console.timeEnd("nombre");
+
+console.time("nombre");
+ 
+console.warn('%c victoria ', 'background-color:purple; color:yellow; font-size:18px; line-height:24px; font-weight: bolder; border:1px solid yellow;')
+console.timeEnd("nombre");
+
+console.time("nombre");
+ 
+console.info('%c victoria ', 'background-color:#c5c5c5; color:#b1b1b1; font-size:18px; line-height:24px; font-family:courier; border-radius:10px;')
+console.timeEnd("nombre");
+
+
+---
+
+var alumnos = [
+    
+{ nombre: "Alumno1", extension: "Sitio 1" },
+   
+{ nombre: "Alumno2", extension: "Sitio 2" },
+    
+{ nombre: "Alumno3", extension: "Sitio 3" },
+{ nombre: "Alumno4", extension: "Sitio 4" },
+   
+{ nombre: "Alumno5", extension: "Sitio 5" },
+    
+{ nombre: "Alumno6", extension: "Sitio 6" },
+{ nombre: "Alumno7", extension: "Sitio 7" },
+{ nombre: "Alumno8", extension: "Sitio 8" },
+];
+
+
+console.table(alumnos);
+

@@ -1,0 +1,10 @@
+var valor1= prompt("Dime el primer número");
+var valor2= prompt("Dime el segundo número");
+
+    if (valor1>valor2) {
+        console.log(valor1, "es el número mayor");
+    } else if (valor1<valor2){
+        console.log(valor2, "es el número mayor");
+    } else {
+        console.log("Son números iguales");
+    }

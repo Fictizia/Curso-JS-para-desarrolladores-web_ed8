@@ -1,0 +1,19 @@
+Algoritmo ejercicio7
+	Escribir "dime una letra y te diré cuantas veces aparece en una frase"
+	Leer letra
+	Escribir "dime una frase"
+	leer frase
+	
+	vuelta=0
+	longitudFrase=longitud(frase)
+	total=0
+	
+	Mientras vuelta<=longitudFrase hacer
+		si letra=subCadena(frase, vuelta, vuelta) entonces
+			total=total+1
+		FinSi
+		vuelta=vuelta+1
+	FinMientras
+	escribir "el total de letras", letra,"es de", total;
+	
+FinAlgoritmo

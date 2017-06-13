@@ -1,8 +1,7 @@
 1 - Diseña un algoritmo que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
 
----
- 
- 
+// Tu solución
+	 
 var numero1 = 12;
 var numero2 = 10;
 

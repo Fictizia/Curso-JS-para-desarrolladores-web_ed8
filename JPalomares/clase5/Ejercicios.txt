@@ -1,0 +1,20 @@
+ **Ejercicio 1**
+ 
+var numero1 = 12;
+var numero2 = 10;
+
+if (numero1>numero2) {
+
+	console.log("el numero1 es mayor");
+}
+
+ else if (numero2>numero1){
+
+     console.log("el numero2 es mayor");
+ } 
+
+ else {
+ 	 
+ 	 console.log ("Los numeros son iguales");
+}
+

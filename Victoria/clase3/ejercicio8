@@ -1,0 +1,9 @@
+Algoritmo ejercicio8
+	moneda<-azar(2)
+	Si valor!=0 Entonces
+		Escribir "Cara"
+	SiNo
+		Escribir "Cruz"
+	FinSi
+	
+FinAlgoritmo

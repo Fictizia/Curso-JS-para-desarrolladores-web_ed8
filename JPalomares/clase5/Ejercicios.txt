@@ -21,20 +21,57 @@ if (numero1>numero2) {
 }
 
 
----
-
 2 - Diseña un script que lea tres números distintos y nos diga cual de ellos es el mayor.
 
-	// Tu solución
-	
+var numero1 = 11;
+var numero2 = 11;
+var numero3 = 11;
+
+if (numero1>numero2 && numero1>numero3) {
+
+	console.log("el numero1 es mayor");
+}
+
+ else if (numero2>numero1 && numero2>numero3){
+
+     console.log("el numero2 es mayor");
+ } 
+
+   else if (numero3>numero1 && numero3>numero1){
+       console.log ("El numero 3 es el mayor");
+   }
+ else {
+ 	 
+ 	 console.log ("los numeros son iguales");
+}
+
 	
 3 - Diseña un script que siga el siguiente proceso:
 
 Si el primero es negativo, debe sumar los otros dos
 Sino multiplicará los tres numeros
 Mostrar el resultado final incluyendo una referencia a la operación realizada.
-	// Tu solución
-	
+
+--
+
+
+var numero1 = -2;
+var numero2 = 20;
+var numero3 = 31;
+var resultado = 0;
+
+if (numero1<0) {
+
+	resultado = numero2 + numero3;
+  	console.log("El numero 1 es negativo por lo que el resultado de sumar " + numero2 + " + " + numero3 + " es igual a " 	     + resultado);
+  
+}
+
+ else  {
+	resultado =  numero1 * numero2 * numero3;
+        console.log("El numero 1 es positivo por lo que el resultado de multiplicar " + numero1 + " * " + numero2 + " * " + 	    numero3 + " es igual a " + resultado );
+ } 
+
 	
 4 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
 
@@ -43,17 +80,63 @@ Estamos en los meses de invierno
 Y no es viernes o fin de semana.
 	// Tu solución
 	
+var dia = "Lunes";
+var mes = "Enero";
+var precio = 50;
+var precio2 = 0;
+
+
+if (dia!="Viernes" && dia!="Sabado" && dia!="Domingo" && mes==="Enero" || mes==="Febrero" || mes==="Diciembre") 
+
+{
+   
+	precio2 = precio - (precio*25/100);
+ 	console.log("Enhorabuena, recibes una rebaja del 25%, el precio anterior era " + precio + " y ahora vas a pagar " + precio2);
+
+}
+
+else {
+	
+	console.log("Lo sentimos tu producto no lleva descuento");
+}
 	
 5 - Diseña un algoritmo que al introducir un numero nos diga si es positivo o negativo.
 
 	// Tu solución
 	
+
+var numero = prompt("Introduce un numero");
+
+
+if (parseInt(numero)>0)
+{
+   console.log("El numero es positivo");
+}
+
+else {
+  
+  console.log("El numero es negativo");
+	
+}
+
 	
 6 - Diseña un algoritmo que al introducir un número nos diga si es par o impar.
 
 	// Tu solución
+var numero = prompt("Introduce un numero");
+
+
+if (parseInt(numero)%2==0)
+{
+   console.log("El numero es par");
+}
+
+else {
+  
+  console.log("El numero es impar");
 	
-	
+}
+
 7 - Diseña un algoritmo que nos confirme si un año es bisiesto o no.
 
 Caracteristicas de un año bisiesto:
@@ -63,3 +146,17 @@ Puede ser divisble entre 100 y entre 400
 
 
 	// Tu solución
+	
+var numero = prompt("Introduce un numero");
+
+
+if (parseInt(numero)%4==0 && parseInt(numero)%100!==0 && parseInt(numero)%100===0 && parseInt(numero)%400===0)
+{
+   console.log("El año es bisiesto");
+}
+
+else {
+  
+  console.log("El año no es bisiesto");
+	
+}

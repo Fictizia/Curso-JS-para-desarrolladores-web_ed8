@@ -12,3 +12,22 @@ console.log(numb,"es el número mayor")
 else {
     console.log("los números son iguales")
 }
+
+
+Ejercicio 2
+
+var numa = prompt("indíca un número");
+var numb = prompt("Indíca otro número");
+var numc = prompt("indíca otro número");
+
+if (numa>numb && numa>numc) {
+    console.log(numa, "es el número mayor")
+}
+else if (numb>numa && numb>numc) {
+console.log(numb,"es el número mayor")}
+else {
+console.log(numc, "es el número mayor")
+            }
+}
+
+

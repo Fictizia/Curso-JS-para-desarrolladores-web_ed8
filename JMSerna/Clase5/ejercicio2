@@ -1,0 +1,13 @@
+var num1 = parseInt(prompt("Inserta valor 1"));
+var num2 = parseInt(prompt("Inserta valor 2"));
+var num3 = parseInt(prompt("Inserta valor 3"));
+
+if(num1 > num2 && num1 > num3){
+	console.log("El primero es el mayor")
+}
+if(num2 > num1 && num2 > num3){
+	console.log("El segundo es el mayor")
+}
+if(num3 > num2 && num3 > num1){
+	console.log("El tercero es el mayor")
+}

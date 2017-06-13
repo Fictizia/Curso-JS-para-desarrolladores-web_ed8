@@ -1,0 +1,20 @@
+Algoritmo ejercicio6
+	Escribir "indica un número"
+	Leer num
+	
+	vuelta=0
+	npar=0
+	nimpar=0
+	
+	Mientras vuelta>50 Hacer
+		Si num mod 2 = 0 Entonces
+			npar=npar+num
+			vuelta=vuelta+1
+		SiNo
+			nimpar=numimpar+1
+		FinSi
+		num=num+1
+	FinMientras
+	Escribir "total de pares: ",npar
+	Escribir "total de impares: ",nimpar
+FinAlgoritmo

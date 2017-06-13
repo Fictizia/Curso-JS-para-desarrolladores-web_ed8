@@ -30,4 +30,14 @@ console.log(numc, "es el número mayor")
             }
 }
 
+Ejercicio 3
 
+var numa = prompt("indíca un número");
+var numb = prompt("Indíca otro número");
+var numc = prompt("indíca otro número");
+
+
+if (numa<0){
+console.log("como el primer número es negativo, hemos sumado los otros dos y el resultado es ",parseInt(numb)+parseInt(numc))}
+else {
+console.log("como todos los numeros son positivos los hemos multiplicado y el resultado es ", numa*numb*numc)}

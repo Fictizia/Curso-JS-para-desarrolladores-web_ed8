@@ -17,7 +17,7 @@ Ejercicio 2
 
 
 
-var hombres=prompt (¿Cual es el número de hombres?);
+var hombres=prompt ("¿Cual es el número de hombres?");
 var mujeres= prompt ("¿Cual es el número de mujeres? ");
 var alumnos = 8;
 

@@ -38,11 +38,69 @@ Imprimir tu nombre usando console.log, console.info, console.warn
     console.table(alumnos);
 
 
-Una línea
-// Comentario en una línea
-Multiples Líneas
-/*
-Una Línea....
-Otra linea...
-Etc...
-*/
+1 - Vamos a solicitar la colaboración del usuario para lograr nuestros objetivos:
+
+Objetivos:
+
+Captura el nombre del usuario usando prompt
+Pregunta al usuario si desea "comprobar lo rápido que funciona su navegador".
+En caso afirmativo imprimiremos el nombre del usuario por consola aplicandole estilos y calculando el tiempo que tarda en realizar la operación
+En caso negativo mostraremos un alert informativo.
+Versión 1:
+
+	var tuNombre = prompt("¿Cuál estu nombre?" , "") ;
+
+	var respuesta = confirm("¿Quieres saber lo rápido que es el navegador?") ;
+
+	if (respuesta === true) {
+	    console.time(tuNombre) ;
+	    console.log("%c" + tuNombre, "background-color:red; font-family:helvetiva; text-decoration: underline") ;
+	    console.timeEnd(tuNombre) ;
+	}
+	else {
+	    alert("Pues tu te lo pierdes...")
+	}
+	
+Versión 2:
+
+	var tuNombre = prompt("¿Cuál estu nombre?" , "") ;
+
+	var respuesta = confirm("¿Quieres saber lo rápido que es el navegador?") ;
+
+	if (respuesta === false) {
+	    alert("Pues tu te lo pierdes...")
+	}
+	else {
+	    console.time(tuNombre) ;
+	    console.log('%c' + tuNombre, 'font-family: Arial; color: rgba(255,55,255,.8; font-size: 40px; text-decoration: underline') ;
+	    console.timeEnd(tuNombre) ;
+	}
+	
+
+1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos:
+
+Valor de su suma
+Valor de su resta
+Valor de su division
+Valor de su producto
+
+	var numero1 = prompt("Dime un número");
+	var numero2 = prompt("Dime un segundo número");
+
+	console.log(parseInt(numero1) + parseInt(numero2));
+	console.log(parseInt(numero1) - parseInt(numero2));
+	console.log(parseInt(numero1) * parseInt(numero2));
+	console.log(parseInt(numero1) / parseInt(numero2));
+	
+2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso.
+
+	var hombresClase = prompt("¿Cuántos hombres hay en clase?") ;
+	var mujeresClase = prompt("¿Cuántas mujeres hay en clase?") ;
+
+	var totalAlumnos = parseInt(hombresClase) + parseInt(mujeresClase) ;
+
+	console.log("El porcentaje de mujeres es " , (mujeresClase/totalAlumnos)*100 );
+	console.log("El porcentaje de hombres es " , (hombresClase/totalAlumnos)*100 );
+
+
+

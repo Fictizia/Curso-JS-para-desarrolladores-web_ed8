@@ -1,8 +1,10 @@
 function calcular (valor1, valor2){
 	if(valor1 > valor2){
-		console.log("el primer valor es mayor")
+		console.log("el primer valor es mayor");
+	}else if(valor1 < valor2){
+		console.log("el segundo valor es mayor");
 	}else{
-		console.log("el segundo valor es mayor")
+		console.log("son iguales")
 	}
 
 

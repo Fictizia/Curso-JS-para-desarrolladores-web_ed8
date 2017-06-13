@@ -1,0 +1,17 @@
+Algoritmo ejercicio9
+	contar=0
+	diez=0
+	
+	Mientras contar<=100 Hacer
+		dadoa<-azar(7)
+		dadob<-azar(7)
+		escribir dadoa, " , ", dadob
+		tirar<-dadoa+dadob
+		
+		Si tirar=10 Entonces
+			diez=diez+1
+		FinSi
+		contar=contar+1
+	FinMientras
+	escribir "los dos dados han sumado 10 ",diez," veces"
+FinAlgoritmo

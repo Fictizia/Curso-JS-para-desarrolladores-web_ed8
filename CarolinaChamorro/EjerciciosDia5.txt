@@ -35,6 +35,17 @@ Si el primero es negativo, debe sumar los otros dos
 Sino multiplicará los tres numeros
 Mostrar el resultado final incluyendo una referencia a la operación realizada.
 
+	function calculosVarios(numero1, numero2, numero3){
+    if (numero1 < 0) ) {
+		console.info("El primero es negativo por tanto:", numero2 " + " numero3, " = ", numero2+numero3)
+    } else {  
+        console.log("El primero es positivo por tanto:", numero2 " * " numero3, " = ", numero2*numero3)
+        
+    }
+}
+
+calculosVarios(-5,8,8);
+
 4 - Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
 
 Se aplica un 25% cuando:

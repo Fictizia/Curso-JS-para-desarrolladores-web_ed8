@@ -1,0 +1,14 @@
+Ejercicio 1
+
+console.log("indíca dos números y te diré cual es mayor")
+var numa = prompt("indíca un número");
+var numb = prompt("indíca otro número");
+
+if (numa>numb) {
+console.log(numa,"es el número mayor")
+} else if (numa<numb){
+console.log(numb,"es el número mayor")
+}
+else {
+    console.log("los números son iguales")
+}

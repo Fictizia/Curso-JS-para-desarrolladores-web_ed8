@@ -77,3 +77,22 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 
 	console.timeEnd("presentación");	
 	
+	
+	
+	
+5 - Crea una tabla usando la consola para mostrar el nombre de tus compañeros y el puesto que ocupa en la clase.
+
+	// Tu solución
+	
+	var compis = [
+	    { nombre: "Carlos", lugar: "primera fila, derecha" },
+	    { nombre: "Carolina", lugar: "primera fila, izquierda" },
+	    { nombre: "Daniel", lugar: "segunda fila, derecha" },
+	    { nombre: "José Miguel", lugar: "segunda fila, izquierda" },
+	    { nombre: "Javier", lugar: "tercera fila, derecha" }, 
+	    { nombre: "Isabel", lugar: "tercera fila, izquierda" }, 
+	    { nombre: "Victoria", lugar: "tercera fila, derecha" }, 
+	    { nombre: "Juan", lugar: "cuarta fila, derecha" },     			           
+	];
+
+	console.table(compis);	

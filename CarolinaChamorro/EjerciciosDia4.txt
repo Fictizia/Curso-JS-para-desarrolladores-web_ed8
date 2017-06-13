@@ -109,4 +109,30 @@ alert("No quiere saberlo");
 
 
 	
-//2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso. Hint: Calcular porcentajes (segmento*100)/total
+//2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso. Hint: Calcular porcentajes (segmento*100)/total (EJERCICIO RESUELTO EN CLASE)
+
+
+
+	function porcentajeAlumnos(totalHombres, totalMujeres){
+		var totalAlumnos = totalHombres + totalMujeres;
+		var porcentajeMujeres = (totalMujeres*100)/totalAlumnos;
+		var porcentajeHombres = (totalHombres*100)/totalAlumnos;
+		
+		
+	return{
+		totales:{
+			todos:totalAlumnos,
+			mujeres:totalMujeres,
+			hombres:totalHombres
+		},
+	
+		porcentajes{
+			mujeres:porcentajeMujeres,
+			hombres:porcentajeHombres
+		
+		},
+	}
+	
+	
+	console.log( "El % de mujeres es:", alumnos.porcentajes.mujeres)
+	Document.body.innerHTML= "El porcentaje de hombres es:" + alumnos.porcentajes.hombres

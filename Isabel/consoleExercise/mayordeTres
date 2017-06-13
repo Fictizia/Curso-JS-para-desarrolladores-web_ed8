@@ -1,0 +1,11 @@
+var valor1= prompt("Dime el primer número");
+var valor2= prompt("Dime el segundo número");
+var valor3= prompt("Dime el tercer número");
+
+    if ((valor1 > valor2) && (valor2  >valor3)) {
+        console.log(valor1, "es el número mayor");
+    } else if ((valor2>valor1) && (valor2>valor1)){
+        console.log(valor2, "es el número mayor");
+    } else {
+        console.log(valor3, "es el número mayor");
+    }

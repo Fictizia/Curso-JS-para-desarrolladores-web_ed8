@@ -1,0 +1,30 @@
+Ejercicio 1
+
+
+var numa = prompt ("Indíca un número");
+var numb = prompt ("Indíca otro número");
+console.log(numa+numb);
+console.log(numa-numb);
+console.log(numa*numb);
+console.log(numa/numb);
+
+
+
+
+
+Ejercicio 2
+
+
+
+
+var hombres=prompt (¿Cual es el número de hombres?);
+var mujeres= prompt ("¿Cual es el número de mujeres? ");
+var alumnos = 8;
+
+var calculoHombres = (hombres*100)/alumnos;
+var calculoMujeres = (mujeres*100)/alumnos;
+
+Console.log("el porcentaje de hombres es de", calculoHombres);
+Console.log("el porcentaje de mujeres es de", calculoMujeres);
+
+

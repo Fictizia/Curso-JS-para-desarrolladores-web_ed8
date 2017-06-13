@@ -1,5 +1,16 @@
 1 - Diseña un algoritmo que lea dos números y los compare. Como resultado esperamos que nos diga cual es mayor... o si son iguales.
 
+function comparadorNumeros (numero1, numero2){
+    if (numero1 < numero2) {
+        console.log(numero1, "es más pequeño que ", numero2)
+    } else if (numero1 > numero2){
+        console.log(numero1, "es más mayor que ", numero2)
+    } else {
+        console.log(numero1, "es igual que ", numero2)
+    }
+}
+
+comparadorNumeros(6,5);
 
 
 2 - Diseña un script que lea tres números distintos y nos diga cual de ellos es el mayor.

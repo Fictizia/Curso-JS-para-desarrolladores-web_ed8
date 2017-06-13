@@ -1,0 +1,14 @@
+var nombre = prompt("Indica tu nombre"); 
+var respuesta = confirm("¿Quieres comprobar lo rápido que funciona tu navegador?");
+if (respuesta === true) {
+console.time("nombre");
+console.log(nombre, '%c', 'background-color:lightgray; color:turquoise; font-size:24px; font-weight: bold; border-radius:5px;');
+console.timeEnd("nombre");
+} else {
+    alert ("Oh, que pena");
+}
+ 
+ 
+ 
+ 
+ 

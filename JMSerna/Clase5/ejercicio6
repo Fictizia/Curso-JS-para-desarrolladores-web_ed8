@@ -1,0 +1,8 @@
+var numero = parseInt(prompt("Inserte un número"));
+
+function comparar(numero){
+	
+	alert(numero %2 == 0 ? "El numero es par" : "El numero es impar");
+	
+}
+comparar(numero);

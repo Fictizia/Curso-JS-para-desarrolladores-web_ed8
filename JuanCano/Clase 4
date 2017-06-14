@@ -40,42 +40,40 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 
 	// Tu solución
 	
-	console.time("presentación");	
+	  console.time("presentación");	
 
 	//console.log
-		console.group("grupo console.log");
-		console.time("presentacion");
+	  console.group("grupo console.log");
+          console.time("presentacion");
 	  console.log('%c Juan ', 'background: #80ba27; color: #00FFF; font-size:54px;');
 	  console.timeEnd("presentacion");
 	  console.groupEnd();
 
 
-
-
 	//console.info
-		console.group("grupo console.info");
-		console.time("presentacion");
+	  console.group("grupo console.info");
+          console.time("presentacion");
 	  console.info('%c Juan ', 'background: #3EBDFF; color: #FFF; font-size:25px;');
 	  console.timeEnd("presentacion");
 	  console.groupEnd();
 
 
 	//console.warn
-		console.group("grupo console.warn");
-		console.time("presentacion");
+	  console.group("grupo console.warn");
+	  console.time("presentacion");
 	  console.warn('%c Juan ', 'background: #FFF06A; color: #FFF; font-size:25px;');
 	  console.timeEnd("presentacion");
 	  console.groupEnd();
 
 	//console.error
-		console.group("grupo console.error");
-		console.time("presentacion");
+	  console.group("grupo console.error");
+	  console.time("presentacion");
 	  console.error('%c Juan ', 'background: #FF1000; color: #FFF; font-size:25px;');
 	  console.timeEnd("presentacion");
 	  console.groupEnd();
 
 
-	console.timeEnd("presentación");	
+	  console.timeEnd("presentación");	
 	
 	
 	
@@ -85,14 +83,86 @@ Imprimir tu nombre usando console.log, console.info, console.warn
 	// Tu solución
 	
 	var compis = [
-	    { nombre: "Carlos", lugar: "primera fila, derecha" },
-	    { nombre: "Carolina", lugar: "primera fila, izquierda" },
-	    { nombre: "Daniel", lugar: "segunda fila, derecha" },
-	    { nombre: "José Miguel", lugar: "segunda fila, izquierda" },
-	    { nombre: "Javier", lugar: "tercera fila, derecha" }, 
-	    { nombre: "Isabel", lugar: "tercera fila, izquierda" }, 
-	    { nombre: "Victoria", lugar: "tercera fila, derecha" }, 
-	    { nombre: "Juan", lugar: "cuarta fila, derecha" },     			           
+	     { nombre: "Javier", puesto: 1 },
+	     { nombre: "Daniel", puesto: 2 },
+	     { nombre: "Carolina", puesto: 3 },
+	     { nombre: "Juan Ángel", puesto: 4 },
+	     { nombre: "Victoria", puesto: 5 },
+	     { nombre: "Carlos", puesto: 6 },
+	     { nombre: "Isabel", puesto: 7 },
+	     { nombre: "Jose Manuel", puesto: 8 }			           
 	];
 
 	console.table(compis);	
+	
+	
+	
+
+
+
+
+Ejercicios
+
+1 - Diseña un algoritmo que lea dos números y realice los siguientes cálculos:
+
+Valor de su suma
+Valor de su resta
+Valor de su division
+Valor de su producto
+
+
+
+
+
+
+	function operacionesMatematicas(numero1, numero2){
+		console.info("El resultado de la suma es:", numero1+numero2);
+		console.info("El resultado de la resta es:",numero1-numero2);
+		console.info("El resultado de la división es:", numero1/numero2);
+		console.info("El resultado de la división es:", numero1*numero2)
+	};
+	
+	operacionesMatematicas(33,82);
+	
+	
+	
+	
+	
+
+
+2 - Diseña un algoritmo para calcular el porcentaje de hombres y mujeres en nuestro curso.
+
+Trucos:
+Calcular porcentajes (segmento*100)/total
+
+
+
+	function porcentajeAlumnos(totalHombres, totalMujeres){
+		var totalAlumnos = totalHombres + totalMujeres;
+		var porcentajeMujeres = (totalMujeres*100)/totalAlumnos;
+		var porcentajeHombres = (totalHombres*100)/totalAlumnos;
+		
+		console.info("El total de alumnos es:", totalAlumnos)
+		
+		console.log("El total de mujeres es:", totalMujeres);
+		console.info("El % de mujeres es:", porcentajeMujeres);
+		
+		console.log("El total de hombres es:", totalHombres);
+		console.info("El % de hombres es:", porcentajeHombres);
+	};
+	
+	porcentajeAlumnos(5,3);
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+

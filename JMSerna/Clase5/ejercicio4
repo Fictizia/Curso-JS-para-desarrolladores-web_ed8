@@ -1,0 +1,32 @@
+
+var precio = parseInt(prompt("Cual es el precio del teléfono?"));
+var mes = prompt("En que mes estamos?");
+var dia = prompt("Que dia de la semana es");
+
+
+
+function descuento (precio,mes,dia){
+
+	if(mes === 'noviembre' || mes === 'diciembre' || mes === 'enero'){
+			
+		alert('Lo sentimos pero no es aplicable el descuento')
+		
+	
+	}else if(dia === 'viernes' || dia === 'sábado' || dia === 'domingo'){
+		
+		alert('Lo sentimos pero no es aplicable el descuento')
+		
+	}else{
+		
+		var resultado = (precio*25)/100
+		var resto = precio - resultado
+		
+		alert("Felicidades! El descuento es de un 25%!")
+		alert("El precio de tu móvil será de" + resto)
+	
+	}
+
+
+}
+
+descuento(precio,mes,dia);

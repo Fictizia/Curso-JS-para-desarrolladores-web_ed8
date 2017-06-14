@@ -1,0 +1,8 @@
+var numero = parseInt(prompt("Inserte un número"));
+
+function comparar(numero){
+	
+	alert(numero<0 ? "El numero es negativo" : "El numero es positivo");
+	
+}
+comparar(numero);

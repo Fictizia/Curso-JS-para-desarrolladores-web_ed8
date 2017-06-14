@@ -95,3 +95,29 @@ Y no es viernes o fin de semana.
 		}	
 
 
+
+6 - Diseña un algoritmo que al introducir un número nos diga si es par o impar.
+
+	// Tu solución
+
+		var numero = prompt("Introduce un número")
+
+			if (numero%2==0) {
+			    console.log("El número", numero, "es par")
+			}
+			else {
+			    console.log("El número", numero, "es es impar")
+			}	
+
+
+
+7 - Diseña un algoritmo que nos confirme si un año es bisiesto o no.
+
+Caracteristicas de un año bisiesto:
+Tiene que ser divisible entre 4
+No tiene que ser divisible entre 100
+Puede ser divisble entre 100 y entre 400
+	// Tu solución
+	
+	
+	

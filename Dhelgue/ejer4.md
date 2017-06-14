@@ -78,14 +78,68 @@ Y no es viernes o fin de semana.
 	
 5 - Diseña un algoritmo que al introducir un numero nos diga si es positivo o negativo.
 
-	// Tu solución
+	// Utilizando prompt //
+		var numero1 = prompt("dime un número cualquiera");
+
+		if (numero1>0) {
+		    console.log("el número " , numero1 , " es positivo")
+		}
+		else if (numero1<0) {
+		    console.log("el número " , numero1 , " es negativo")
+		}
+		else {
+		    console.log("el número es CERO")
+		}
+
+
+	// Utilizando funciones //
+		function compararNumero (valor1) {
+		  if (valor1>0) {
+		    console.log("el número " , valor1 , " es positivo")
+		    }
+		    else if (valor1<0) {
+		    console.log("el número " , valor1 , " es negativo")
+		    }
+		    else {
+		    console.log("el número es CERO")
+		    }
+		}
+
+		compararNumero(8)
+
+
 6 - Diseña un algoritmo que al introducir un número nos diga si es par o impar.
 
-	// Tu solución
+	// Utilizando prompt //
+	var numero1 = prompt("dime un número cualquiera");
+
+	var resultado = (numero1/2) % 0
+
+	if (resultado === true) {
+	    console.log("el número " , numero1 , " es par")
+	    }
+	else {
+	    console.log("el número " , numero1 , " es impar")
+	}
+
+
 7 - Diseña un algoritmo que nos confirme si un año es bisiesto o no.
 
 Caracteristicas de un año bisiesto:
 Tiene que ser divisible entre 4
 No tiene que ser divisible entre 100
 Puede ser divisble entre 100 y entre 400
-	// Tu solución
+
+// Utilizando prompt //
+var year = prompt("dime un año cualquiera");
+
+
+if ((year %4) ==0 && (year %100) !=0) {
+    console.log("el año " , year , " es bisiesto")
+    }
+else if ( (year %100) ==0 && (year %400) ==0) {
+    console.log("el año " , year , " es bisiesto")
+}
+else {
+    console.log("el año " , year , " no es bisiesto")
+}

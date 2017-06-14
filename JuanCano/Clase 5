@@ -37,3 +37,12 @@ comparadorNumerico(373,372);
     };
 
     comparadorNumerico(373,372,483);
+    
+    
+    
+3 - Diseña un script que siga el siguiente proceso:
+
+Si el primero es negativo, debe sumar los otros dos
+Sino multiplicará los tres numeros
+Mostrar el resultado final incluyendo una referencia a la operación realizada.
+	// Tu solución    

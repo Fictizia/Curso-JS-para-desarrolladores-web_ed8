@@ -106,7 +106,7 @@ Y no es viernes o fin de semana.
 			    console.log("El número", numero, "es par")
 			}
 			else {
-			    console.log("El número", numero, "es es impar")
+			    console.log("El número", numero, "es impar")
 			}	
 
 

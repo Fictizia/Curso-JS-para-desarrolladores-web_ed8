@@ -60,3 +60,38 @@ if (mes=== "diciembre" || "enero" || "febrero") {
 else {
 	console.log("no hay descuento, el precio es ", precio);
 }
+
+
+Ejercicio 5
+
+var num = prompt("indica un número");
+if (num<0){
+	console.log("el número es par");
+}
+else{
+	console.log("el número es impar")
+}
+
+
+Ejercicio 6
+
+
+var num = prompt("indica un número");
+if (num % 2 === 0) {
+	console.log("es un número par");}
+else{
+	console.log("es un número impar");
+}
+
+
+Ejercicio 7
+
+var year = prompt("introduce un año y te diré si es bisiesto o no");
+if ((year % 4 === 0 && % 100 != 0) || (year % 100 === 0 && % 400 === 0)){
+	console.log("es bisiesto");
+}
+else{
+	console.log("no es bisiesto"),
+}
+
+

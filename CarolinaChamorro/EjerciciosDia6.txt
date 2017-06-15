@@ -45,7 +45,8 @@ Si se pasan los tres intentos. Se despliega un mensaje informativo.
 
 5 - Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
 
-	// Tu solución
+	
+	
 6 - Diseña un algoritmo que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 
 	// Tu solución

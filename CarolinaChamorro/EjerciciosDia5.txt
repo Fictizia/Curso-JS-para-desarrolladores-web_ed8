@@ -35,9 +35,9 @@ Si el primero es negativo, debe sumar los otros dos
 Sino multiplicará los tres numeros
 Mostrar el resultado final incluyendo una referencia a la operación realizada.
 
-	function calculosVarios(numero1, numero2, numero3){
+function calculosVarios(numero1, numero2, numero3){
     if (numero1 < 0) ) {
-		console.info("El primero es negativo por tanto: ", numero1, " * ",  numero2, " + ", numero3, " = ", numero1+numero2+numero3)
+	console.info("El primero es negativo por tanto: ", numero1, " * ",  numero2, " + ", numero3, " = ", numero1+numero2+numero3)
     } else {  
         console.log("El primero es positivo por tanto: ", numero1, " * ", numero2, " * ", numero3,  " = ", numero1*numero2*numero3)
         
@@ -54,9 +54,25 @@ Y no es viernes o fin de semana.
 
 5 - Diseña un algoritmo que al introducir un numero nos diga si es positivo o negativo.
 
+function positivoNegativo(numero){
+if (numero < 0) {
+	console.log("El número ", numero, " es negativo")
+	} else {
+	console.log("El número ", numero, " es positivo")
+	}
+
+}
 
 6 - Diseña un algoritmo que al introducir un número nos diga si es par o impar.
 
+function positivoNegativo(numero){
+if (numero %= 2 ) {
+	console.log("El número ", numero, " es par")
+	} else {
+	console.log("El número ", numero, " es impar")
+	}
+
+}
 
 7 - Diseña un algoritmo que nos confirme si un año es bisiesto o no.
 
@@ -64,3 +80,12 @@ Caracteristicas de un año bisiesto:
 Tiene que ser divisible entre 4
 No tiene que ser divisible entre 100
 Puede ser divisble entre 100 y entre 400
+
+function positivoNegativo(numero){
+if (numero %= 2 ) {
+	console.log("El número ", numero, " es par")
+	} else {
+	console.log("El número ", numero, " es impar")
+	}
+
+}

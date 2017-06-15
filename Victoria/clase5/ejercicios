@@ -41,3 +41,22 @@ if (numa<0){
 console.log("como el primer número es negativo, hemos sumado los otros dos y el resultado es ",parseInt(numb)+parseInt(numc))}
 else {
 console.log("como todos los numeros son positivos los hemos multiplicado y el resultado es ", numa*numb*numc)}
+
+Ejercicio 4
+
+var mes = prompt("introducir mes");
+var dia = prompt("introducir día de la semana");
+var precio = prompt("introducir precio");
+console.log(precio);
+precio =parseInt(precio);
+if (mes=== "diciembre" || "enero" || "febrero") {
+	if (dia!= "viernes" ||"sábado"||"domingo"){
+		console.log("el precio con descuento es ", precio-((25*precio)/100) , "euros");
+	}
+	else{
+		console.log("no hay descuento, el precio es ", precio);
+	}
+}
+else {
+	console.log("no hay descuento, el precio es ", precio);
+}

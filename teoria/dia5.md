@@ -427,6 +427,44 @@ Realiza los siguientes ejercicios usando en cada uno los tres tipos de condicion
 	- No tiene que ser divisible entre 100
 	- Puede ser divisble entre 100 y entre 400
 
+- Usando *if...else*
 ```javascript
-	// Tu solución
+	function esBisiesto (year) {
+		
+		if (year % 4 === 0 && year % 100 !== 0) {
+			console.info("Amigo, el año " +year+ " es bisiesto!");
+		} else if (year % 400 === 0 && year % 100 === 0) {
+			console.info("Amigo, el año " +year+ " es bisiesto!");
+		} else {
+			console.warn("Amigo, el año " +year+ " NO es bisiesto!");
+		};
+
+	}
+```
+
+- Usando *Operador Ternario (?:)*
+```javascript
+	function esBisiesto (year) {
+		(year % 4 === 0 && year % 100 !== 0) 
+			? console.info("Amigo, el año " +year+ " es bisiesto!")
+			: (year % 400 === 0 && year % 100 === 0) 
+			? console.info("Amigo, el año " +year+ " es bisiesto!")
+			: console.warn("Amigo, el año " +year+ " NO es bisiesto!");
+	}
+```
+
+- Usando *Switch*
+```javascript
+	function esBisiesto (year) {
+
+		switch(true){
+			case (year % 4 === 0 && year % 100 !== 0):
+			case (year % 400 === 0 && year % 100 === 0):
+				console.info("Amigo, el año " +year+ " es bisiesto!");
+				break;
+			default:
+				console.warn("Amigo, el año " +year+ " NO es bisiesto!");
+		}
+
+	}
 ```

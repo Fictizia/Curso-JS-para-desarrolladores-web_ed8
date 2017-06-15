@@ -248,9 +248,39 @@ Realiza los siguientes ejercicios usando en cada uno los tres tipos de condicion
 - Sino multiplicará los tres numeros
 - Mostrar el resultado final incluyendo una referencia a la operación realizada.
 
+- Usando *if...else*
 ```javascript
-	// Tu solución
+	function jugandoConNumeros (valor1, valor2, valor3) {
+		if (valor1 < 0) {
+			console.log("El resultado de la suma es", valor2+valor3)
+		} else {
+			console.log("El resutlado de la multiplicacion es", valor1 * valor2 * valor3)
+		};
+	}
+
 ```
+
+- Usando *Operador Ternario (?:)*
+```javascript
+	function jugandoConNumeros (valor1, valor2, valor3) {
+		(valor1 < 0) ? console.log("El resultado de la suma es", valor2+valor3) 
+			: console.log("El resutlado de la multiplicacion es", valor1 * valor2 * valor3);
+	}
+```
+
+- Usando *Switch*
+```javascript
+	function jugandoConNumeros (valor1, valor2, valor3) {
+		switch(true){
+			case (valor1 < 0):
+				console.log("El resultado de la suma es", valor2+valor3)
+				break;
+			default:
+				console.log("El resutlado de la multiplicacion es", valor1 * valor2 * valor3);
+		}
+	}
+```
+
 
 **4 -** Diseña un algoritmo que aplique al precio de un producto un descuento cuando se den las siguientes caracteristicas.
 - Se aplica un 25% cuando:

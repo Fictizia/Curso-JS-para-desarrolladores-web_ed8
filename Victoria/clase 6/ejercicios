@@ -1,0 +1,13 @@
+Ejercicio1
+
+for (var i = 0; i < 3; i++) {
+  	var clave=prompt("introduce la clave");
+  	
+  if (clave==="Fictizia mola mucho"){
+    console.info("clave correcta");
+    break;
+  }
+    else {
+    console.info("clave incorrecta");
+    }
+}

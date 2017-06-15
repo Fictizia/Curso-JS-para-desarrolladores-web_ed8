@@ -5,20 +5,20 @@ La palabra clave es "Fictizia mola mucho"
 Solo existen tres intentos
 Si se pasan los tres intentos. Se despliega un mensaje informativo.
 	
-	var alerta = prompt("¿Contraseña?");
 	var contrasena = "Fictizia mola mucho"
-	var intentos = 0
 	
-	function autorizados(alerta){
-		if (alerta = contrasena && intentos < 4){
-			console.log("Contraseña correcta");
+	for (i=1; i<=3; i++){
+		if (prompt("¿Contraseña?"); === contrasena ){
+			console.log("¡Bienvenido!")
+			break
 	   	} else {
-        		console.log("vuelvelo a intentar");
-			var alerta = prompt("¿Contraseña?");
-			intentos++
+        		console.log("vuelvelo a intentar")
     		}
 	}
 	
+	if (i<=3){
+	console.log("Estás fuerísima")
+	}
 
 2 - Diseña un algoritmo que imprima los numeros del 1 al 100.
 

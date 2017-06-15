@@ -21,3 +21,12 @@ if (i===3){
       
       
 Ejercicio 2
+
+var num=0;
+while(num<100){
+  console.log(num);
+  num=num+1;
+}
+
+
+Ejercicio 3

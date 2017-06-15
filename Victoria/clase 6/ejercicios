@@ -30,3 +30,14 @@ while(num<100){
 
 
 Ejercicio 3
+
+
+var num=100;
+while(num>0){
+  console.log(num);
+  num=num-1;
+}
+  
+  
+  
+Ejercicio 4

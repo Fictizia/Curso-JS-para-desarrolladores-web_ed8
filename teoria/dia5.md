@@ -385,8 +385,39 @@ Realiza los siguientes ejercicios usando en cada uno los tres tipos de condicion
 
 **6 -** Diseña un algoritmo que al introducir un número nos diga si es par o impar.
 
+- Usando *if...else*
 ```javascript
-	// Tu solución
+	function esPar (numero) {
+
+		if(numero %2 === 0 ){
+			console.info(numero, " es par");
+		} else {
+			console.info(numero, " es impar");
+		}
+	}
+```
+
+- Usando *Operador Ternario (?:)*
+```javascript
+	function esPar (numero) {
+		(numero %2 === 0) ? console.info(numero, " es par")
+			: console.info(numero, " es impar");
+	}
+```
+
+- Usando *Switch*
+```javascript
+	function esPar (numero) {
+
+		switch(true){
+			case (numero %2 === 0):
+				console.info(numero, " es par");
+				break;
+			default:
+				console.info(numero, " es impar");
+		}
+
+	}
 ```
 
 

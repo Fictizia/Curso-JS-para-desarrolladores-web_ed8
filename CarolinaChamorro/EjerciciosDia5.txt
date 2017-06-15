@@ -37,9 +37,9 @@ Mostrar el resultado final incluyendo una referencia a la operación realizada.
 
 	function calculosVarios(numero1, numero2, numero3){
     if (numero1 < 0) ) {
-		console.info("El primero es negativo por tanto:", numero2 " + " numero3, " = ", numero2+numero3)
+		console.info("El primero es negativo por tanto: ", numero1, " * ",  numero2, " + ", numero3, " = ", numero1+numero2+numero3)
     } else {  
-        console.log("El primero es positivo por tanto:", numero2 " * " numero3, " = ", numero2*numero3)
+        console.log("El primero es positivo por tanto: ", numero1, " * ", numero2, " * ", numero3,  " = ", numero1*numero2*numero3)
         
     }
 }

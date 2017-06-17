@@ -248,8 +248,53 @@ Realiza los siguientes ejercicios usando en cada uno los tres tipos de bucles (D
 
 **2 -** Diseña un algoritmo que imprima los numeros del 1 al 100.
 
+- Usando *for*
 ```javascript
-	// Tu solución
+	function contadorPositivo() {
+		
+		console.info("Empieza la cuenta!");
+
+		for (var i = 1; i <= 100; i++) {
+			console.log(i)
+		};
+
+		console.info("Terminó la cuenta mágica...");
+
+	}
+```
+
+- Usando *while*
+```javascript
+	function contadorPositivo() {
+		
+		console.info("Empieza la cuenta!");
+		
+		var i = 1
+		while (i <= 100) {
+			console.log(i);
+			i++;
+		};
+
+		console.info("Terminó la cuenta mágica...");
+
+	}
+```
+
+- Usando *Do...While*
+```javascript
+	function contadorPositivo() {
+		
+		console.info("Empieza la cuenta!");
+		
+		var i = 1
+		do {
+			console.log(i);
+			i++;
+		} while (i <= 100);
+
+		console.info("Terminó la cuenta mágica...");
+
+	}
 ```
 
 

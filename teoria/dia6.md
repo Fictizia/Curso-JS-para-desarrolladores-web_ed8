@@ -1,6 +1,6 @@
 # Clase 6
 
-## Apoyo...
+### Apoyo...
 
 - [JavaScript, ¡Inspírate!](https://leanpub.com/javascript-inspirate)
 

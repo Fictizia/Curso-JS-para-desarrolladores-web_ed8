@@ -1,0 +1,69 @@
+Ejercicio1
+
+ffor (var i = 0; i < 3; i++) {
+  	var clave=prompt("introduce la clave");
+  	
+  if (clave==="Fictizia mola mucho"){
+    console.info("clave correcta");
+    
+    break;
+  }
+    else {
+    console.info("clave incorrecta");
+      
+    }
+}
+
+if (i===3){
+      console.info("has agotado todos los intentos");
+      }
+      
+      
+      
+Ejercicio 2
+
+var num=0;
+while(num<100){
+  console.log(num);
+  num=num+1;
+}
+
+
+Ejercicio 3
+
+
+var num=100;
+while(num>0){
+  console.log(num);
+  num=num-1;
+}
+  
+  
+  
+Ejercicio 4
+
+
+var num=1;
+while(num<100){
+  if (num % 2 === 0){
+  console.log(num);
+  }
+  num=num+1;
+}
+  
+  
+Ejercicio 5
+
+var num=prompt("indica un número");
+var numb=parseInt(num);
+var i=0;
+while(i<50){
+  if (num % 2 !== 0){
+  console.log(numb);
+  }
+  numb=numb+1;
+  i++;
+}
+
+
+

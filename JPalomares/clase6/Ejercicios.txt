@@ -1,0 +1,64 @@
+1 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
+
+Características:
+La palabra clave es "Fictizia mola mucho"
+Solo existen tres intentos
+Si se pasan los tres intentos. Se despliega un mensaje informativo.
+	// Tu solución
+
+for (var i=0;i<3;i++){
+  
+  var palabra = prompt("Introduce la frase");
+  
+  if (palabra!="Fictizia mola mucho") {
+    
+  console.log("Has introducido la palabra erroneamente");
+  }
+     
+    else {
+   console.log("Enhorabuena estás dentro"); 
+      break;
+  }
+  
+
+   
+}
+
+  if(i==3)
+  {
+  
+  console.log("te has pasado de listillo");
+  
+  }
+  
+  //
+  
+  2 - Diseña un algoritmo que imprima los numeros del 1 al 100.
+
+	// Tu solución
+
+
+for (var i=0; i<101; i++) {
+  
+ console.log(i); 
+}
+  
+//
+
+3 - Diseña un algoritmo que imprima los numeros del 100 al 0.
+
+	// Tu solución
+
+
+for (var i=101 ; i>0 ; i--) {
+  
+ console.log(i); 
+  
+}
+
+
+//
+
+
+  
+  

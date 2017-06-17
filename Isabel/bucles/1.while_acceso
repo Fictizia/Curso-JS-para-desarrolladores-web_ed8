@@ -1,0 +1,10 @@
+var control = 1;
+  while (control < 4) {
+     palabraClave = prompt("Dime la palabra clave");
+     control++;
+  if (palabraClave === "Fictizia mola mucho") {
+    console.info("Eres un usuario autorizado");
+  }else {
+  console.info("No estás autorizado"); 
+  }
+};

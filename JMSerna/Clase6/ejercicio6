@@ -1,0 +1,19 @@
+var numero = parseInt(prompt("Inserta un numero"));
+
+var contadorPar = 0 ;
+var contadorImpar = 0 ;
+
+
+for(i=numero; i <=100; i++){
+    if(i %2 == 0){
+    contadorPar++;
+    }else if (i %2 !== 0){
+    contadorImpar++;
+    }
+var resultado = contadorPar + contadorImpar;    
+}
+
+
+console.log("Hay "+contadorImpar+" números impares");
+console.log("Hay "+contadorPar+" números pares");
+console.log("La suma total es "+ resultado);

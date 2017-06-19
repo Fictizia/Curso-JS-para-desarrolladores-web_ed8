@@ -1,19 +1,20 @@
 var numero = parseInt(prompt("Inserta un numero"));
 
-var contadorPar = 0 ;
-var contadorImpar = 0 ;
+var sumaPares = 0 ;
+var contadorImpar = 0;
+var contadorPar = 0;
 
 
-for(i=numero; i <=100; i++){
-    if(i %2 == 0){
-    contadorPar++;
-    }else if (i %2 !== 0){
+for(i=numero; i <= 100; i++){
+    if(i % 2 == 0){
+    sumaPares = sumaPares + i;
+    }else if (i % 2 !== 0){
     contadorImpar++;
     }
-var resultado = contadorPar + contadorImpar;    
+var resultado = sumaPares + contadorImpar;    
 }
 
 
-console.log("Hay "+contadorImpar+" números impares");
-console.log("Hay "+contadorPar+" números pares");
-console.log("La suma total es "+ resultado);
+console.log("Hay " + contadorImpar + " números impares");
+console.log("La suma de todos los pares es " + sumaPares);
+console.log("La suma total es " + resultado);

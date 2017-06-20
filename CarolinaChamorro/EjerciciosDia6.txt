@@ -8,17 +8,17 @@ Si se pasan los tres intentos. Se despliega un mensaje informativo.
 	var contrasena = "Fictizia mola mucho"
 	
 	for (i=1; i<=3; i++){
-		if (prompt("¿Contraseña?"); === contrasena ){
+		if (i<=3){
+		console.warn("Estás fuerísima")
+		}
+		else if (prompt("¿Contraseña?"); === contrasena ){
 			console.log("¡Bienvenido!")
 			break
 	   	} else {
         		console.log("vuelvelo a intentar")
-    		}
-	}
-	
-	if (i<=3){
-	console.log("Estás fuerísima")
-	}
+    		};
+		
+	};	
 
 2 - Diseña un algoritmo que imprima los numeros del 1 al 100.
 
@@ -47,51 +47,81 @@ Si se pasan los tres intentos. Se despliega un mensaje informativo.
 var numero=prompt("Dime un número");
 var nu=parseInt(numero);
 var i=0;
-while(i<50){
+while (; i<50 ;){
   if (numero % 2 !== 0){
   console.log(nu);
+  i++
   }
-  numero=numero+1;
-  i++;
+  numero++
 }
 	
 6 - Diseña un algoritmo que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 
+function contador(num){
 
-var numero=prompt("Dime un número");
-var impar = 0;
-var pares = 0;
+var totalImpar = 0;
+var totalPar = 0;
+
 for(var i=1; i<=50; i++){
   if (numero % 2 !== 0){
-	impar++;
-  } else {
-  pares=pares+numero;
-  numero++;
-}
-	console.info("La suma de todos los números pares es es", pares);
-	console.info("El total de impares es", impar);
-	
-	
-	
-	-----
-	
-	
-	var num = 1;
-var impares = 0;
-var pares = 0;
-for (var i=1; i<=50;i++){
-	if (num % 2 !==0){
-	impares++;
-	} else {
-	pares=pares+num;
-	}
+	totalImpar+= num
 	num++;
-  	}
-	console.info("La suma de todos los números pares es es", pares);
-	console.info("El total de impares es", impares);
-	
-	
-	
-7 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.
+  } else {
+  totalPar += num;
+  num++;
+}
 
-Esperamos que el número sea menor de 50
+};
+		console.info("Total de suma de pares ", totalPar);
+		console.info("Total de suma de impares ", totalImpar);
+	}
+
+	
+	
+	
+7 - Diseña un algoritmo introducido un numero y pasarlo a número romanos. Esperamos que el número sea menor de 50
+
+	function conversionRomana(numero){
+	
+	var numeroOriginal = numero
+	
+	if (numero<=50 && numero > 0) {
+	
+	var numeroOriginal = numero
+	var numeroRomano = "";
+		While (numero > 0){
+		
+		if(numero === 50){
+			numeroRomano = "L";
+			numero = 0;
+		} else if (numero >= 40 && numero < 50){
+			numeroRomano = "XL";
+			numero -=40;
+		} else if (numero >= 10 && numero < 40){
+			numeroRomano += "X";
+			numero -= 10;
+		} else if(numero === 9){
+			numeroRomano += "IX";
+			numero -= 9;
+		} else if (numero <= 5 && < 9) {
+			numeroRomano += "V";
+			numero -= 5;
+		} else if (numero === 4){
+			numeroRomano += "IV";
+			numero -= 4;				
+		} else if(numero <= 3 && numero > 0){
+			numeroRomano += "I";
+			numero -= 1;
+		}
+	      
+			}
+
+			console.info(numeroOriginal + " en números romanos es " + numeroRomano);
+
+		} else {
+	    
+			console.warn(numeroOriginal + "NO es un número valido (0-50)");
+		
+	  	}
+
+}

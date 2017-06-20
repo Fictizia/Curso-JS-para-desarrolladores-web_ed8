@@ -8,3 +8,21 @@ else {
   console.log("cruz");
 }
 
+
+Ejercicio 2
+
+var suma = 0;
+
+
+for (var i=0; i<100; i++){
+var dadoa = Math.floor(Math.random() * (7 - 0));
+var dadob = Math.floor(Math.random() * (7 - 0));
+
+  console.log(dadoa +" + "+ dadob);
+  if (dadoa + dadob === 10) {
+    suma = suma+1;
+    
+  }
+  
+}
+console.log("los dados han sumado 10 " + suma + " veces");

@@ -38,14 +38,22 @@ Si se pasan los tres intentos. Se despliega un mensaje informativo.
 	var control = 2;
 		while (control <= 100) {
 		console.log(control);
-	control++;
-	control++;
+	control=control+1;
 	};
 
 
 5 - Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
 
-	
+	var numero=prompt("Dime un número");
+	var numero2=parseInt(numero);
+	var i=0;
+	While (i<50){
+		if (numero % 2 !== 0){
+		console.log(numero2);
+		}
+		numero=numero+1
+		i++
+	}
 	
 6 - Diseña un algoritmo que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 

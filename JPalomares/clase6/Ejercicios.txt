@@ -1,10 +1,11 @@
+
 1 - Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
 
 Características:
 La palabra clave es "Fictizia mola mucho"
 Solo existen tres intentos
 Si se pasan los tres intentos. Se despliega un mensaje informativo.
-	// Tu solución
+    // Tu solución
 
 for (var i=0;i<3;i++){
   
@@ -35,7 +36,7 @@ for (var i=0;i<3;i++){
   
   2 - Diseña un algoritmo que imprima los numeros del 1 al 100.
 
-	// Tu solución
+    // Tu solución
 
 
 for (var i=0; i<101; i++) {
@@ -47,7 +48,7 @@ for (var i=0; i<101; i++) {
 
 3 - Diseña un algoritmo que imprima los numeros del 100 al 0.
 
-	// Tu solución
+    // Tu solución
 
 
 for (var i=101 ; i>0 ; i--) {
@@ -56,9 +57,67 @@ for (var i=101 ; i>0 ; i--) {
   
 }
 
+//
+
+
+4 - Diseña un algoritmo que imprima los numeros pares entre 0 y 100.
+
+    // Tu solución
+
+    for (var i=0; i<101; i++)
+    {
+
+    if (i%2==0)
+    console.log(i + " es par");
+    
+    }
 
 //
 
 
-  
-  
+5 - Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
+
+    // Tu solución
+
+    var numero = prompt("Introduce un número");
+    
+
+    for (var numero2 = parseInt(numero) + 50; numero<numero2; numero++){
+
+    if(numero%2!=0)
+     console.log(numero + " es impar");
+
+
+    }
+
+
+//
+
+
+6 - Diseña un algoritmo que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
+
+    // Tu solución
+
+  var numero = prompt("Introduce un número");
+  var suma = 0;
+  var impares= 0;
+
+    for (var numero2 = parseInt(numero) + 50; numero<numero2; numero++){
+
+    if(numero%2==0) {
+     suma=parseInt(suma)+parseInt(numero);
+    }
+    else {
+     impares=impares+1;
+    }
+
+    }
+
+console.log("El total de sumar los 50 numeros pares es de " + suma);
+
+console.log("El total de números impares es de " + impares);
+
+
+7 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.
+
+Esperamos que el número sea menor de 50

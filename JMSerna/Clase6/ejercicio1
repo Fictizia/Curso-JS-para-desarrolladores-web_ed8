@@ -1,0 +1,56 @@
+
+
+
+ 
+var contador = 0;
+ 
+while( pass !== "fictizia"){
+	var pass = prompt("Contraseña?")
+	 
+	 contador = contador+1;
+	 
+	 console.log(contador);
+	 
+	 
+	
+	 if (pass === "fictizia"){
+	alert("HOLA!");
+	}else{
+		alert("Contraseña incorrecta");
+	
+	}
+	
+
+
+ 
+var contador = 0;
+ 
+while( pass !== "fictizia"){
+	var pass = prompt("Contraseña?")
+	 
+	contador = contador+1;
+	 
+	//console.log(contador);
+	 
+	 
+	
+	if (pass === "fictizia"){
+	alert("HOLA!");
+	}else{
+		alert("Contraseña incorrecta");
+		}
+		
+	if (contador == 3){
+		 alert("no tienes mas intentos");
+		 break;
+	}
+	
+		 
+	 
+ }
+ 
+
+		 
+	 
+ }
+ 

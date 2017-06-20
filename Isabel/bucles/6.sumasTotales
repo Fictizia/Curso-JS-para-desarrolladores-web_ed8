@@ -1,0 +1,18 @@
+var valor1 = 2;
+   
+    if(valor1%2==0){
+        valor1=numeroPar
+    }
+    else{
+        valor1=numeroImpar
+    }
+    
+    
+   for ( i=numeroPar; i <= valor2; i++){
+       
+    }
+    console.log(i); 
+    
+   for ( i=numeroImpar; i <= valor2; i++){
+       
+    }

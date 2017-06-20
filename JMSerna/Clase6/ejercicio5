@@ -1,0 +1,7 @@
+var numero = parseInt(prompt("Inserta un numero"));
+
+for(i=numero; i <=100; i++){
+    if(i %2 !== 0){
+    console.log(i);
+    }
+}

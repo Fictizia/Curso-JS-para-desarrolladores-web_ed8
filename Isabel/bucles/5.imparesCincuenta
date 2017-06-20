@@ -1,0 +1,8 @@
+ var valor1 = 2;
+ var valor2 = valor1 + 50;
+    
+   for ( i=valor1; i <= valor2; i++){
+       if (i % 2 ==1 ){
+           console.info(i);
+       }
+    }

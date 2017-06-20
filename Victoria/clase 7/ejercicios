@@ -1,0 +1,10 @@
+Ejercicio 1
+
+var moneda = Math.floor(Math.random() * (2 - 0)) + 0;
+if (moneda===0) {
+  console.log("cara");
+}
+else {
+  console.log("cruz");
+}
+

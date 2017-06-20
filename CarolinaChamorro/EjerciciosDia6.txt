@@ -44,20 +44,54 @@ Si se pasan los tres intentos. Se despliega un mensaje informativo.
 
 5 - Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números.
 
-	var numero=prompt("Dime un número");
-	var numero2=parseInt(numero);
-	var i=0;
-	While (i<50){
-		if (numero % 2 !== 0){
-		console.log(numero2);
-		}
-		numero=numero+1
-		i++
-	}
+var numero=prompt("Dime un número");
+var nu=parseInt(numero);
+var i=0;
+while(i<50){
+  if (numero % 2 !== 0){
+  console.log(nu);
+  }
+  numero=numero+1;
+  i++;
+}
 	
 6 - Diseña un algoritmo que imprima la suma de los 50 primeros numeros pares y el total de números impares partiendo de un número dado por el usuario
 
-	// Tu solución
+
+var numero=prompt("Dime un número");
+var impar = 0;
+var pares = 0;
+for(var i=1; i<=50; i++){
+  if (numero % 2 !== 0){
+	impar++;
+  } else {
+  pares=pares+numero;
+  numero++;
+}
+	console.info("La suma de todos los números pares es es", pares);
+	console.info("El total de impares es", impar);
+	
+	
+	
+	-----
+	
+	
+	var num = 1;
+var impares = 0;
+var pares = 0;
+for (var i=1; i<=50;i++){
+	if (num % 2 !==0){
+	impares++;
+	} else {
+	pares=pares+num;
+	}
+	num++;
+  	}
+	console.info("La suma de todos los números pares es es", pares);
+	console.info("El total de impares es", impares);
+	
+	
+	
 7 - Diseña un algoritmo introducido un numero y pasarlo a número romanos.
 
 Esperamos que el número sea menor de 50

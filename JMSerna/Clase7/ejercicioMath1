@@ -1,10 +1,8 @@
-INCOMPLETO
-
 var moneda = Math.random();
-console.log(Math.random());
 
-if (moneda <= 0.5){
+if(moneda <= 0.5){
 console.log("Es cara");
 }else{
-console.log("Es cruz");
+console.log("Es cruz")
 }
+//console.log(moneda);

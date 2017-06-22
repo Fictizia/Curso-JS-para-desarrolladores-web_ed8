@@ -66,4 +66,22 @@ while(i<50){
 }
 
 
+Ejercicio 6
+
+var num = 1;
+var impares = 0;
+var pares = 0;
+for (var i=1; i<=50;i++){
+	if (num % 2 !==0){
+	impares++;
+	} else {
+	pares=pares+num;
+	}
+	num++;
+  	}
+	console.info("La suma de todos los números pares es es", pares);
+	console.info("El total de impares es", impares);
+
+
+
 

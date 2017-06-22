@@ -40,6 +40,25 @@ do {
   
   
   
+for (i = 0; i < 100; i++) {
+    console.log(i);
+}  
+  
+  
+  
+for (var i = 1; i <= 100; i++) {
+	console.log(i)
+};
+
+console.info("Terminó la cuenta mágica...");
+
+
+
+
+
+  
+  
+  
 3 - Diseña un algoritmo que imprima los numeros del 100 al 0.
 
 	// Tu solución

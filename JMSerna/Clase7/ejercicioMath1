@@ -1,0 +1,8 @@
+var moneda = Math.random();
+
+if(moneda <= 0.5){
+console.log("Es cara");
+}else{
+console.log("Es cruz")
+}
+//console.log(moneda);

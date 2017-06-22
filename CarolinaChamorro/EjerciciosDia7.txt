@@ -1,0 +1,25 @@
+1 - Diseña un algoritmo que simula el lanzamiento de una moneda al aire e imprimir si ha salido cara o cruz.
+
+    function azarMoneda() {
+
+        var valor = Math.floor((Math.random() * 2) + 1);
+
+        if (valor === 1){
+            console.info("¡Cara!");
+        } else {
+            console.info("Ha salido Cruz!");
+        }
+
+    }
+    
+2 - Diseña un algoritmo que simula cien tiradas de dos dados y contar las veces que entre los dos suman 10.
+
+
+
+3 - Diseña un script que confirme si una fecha es valida y además devuelva la fecha en dos formatos diferentes.
+
+Características:
+El usuario introduce tres números (día, mes, año) usando una función.
+Validar la fecha. En caso de error incluir un mensaje informativo.
+Después de validar, devolvemos la fecha en formato DD/MM/AAAA
+Convertimos el número del mes, en el nombre del mes real y devolvemos la fecha en el siguiente formato ( DD de MES de AAAA)

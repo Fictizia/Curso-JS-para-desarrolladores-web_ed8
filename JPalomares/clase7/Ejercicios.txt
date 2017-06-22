@@ -1,0 +1,66 @@
+   Ejercicio1
+   
+   //
+   
+   var moneda = Math.floor(Math.random() * (2 - 0));
+
+   if(moneda == 1){
+
+   console.log("Ha salido cara");
+   }
+   else {
+
+   console.log("Ha salido cruz");
+
+
+   }
+   
+   //
+   
+   Ejercicio 2 //
+   
+  var contador = 0;
+
+	for (var i = 0 ; i < 100 ; i++){
+	var dado1 = Math.floor(Math.random() * (6 - 0));
+	var dado2 = Math.floor(Math.random() * (6 - 0));
+	if (dado1+dado2==10) {
+
+	contador++;
+	}
+
+
+	}
+
+
+	console.log("Los dados han sumado 10 entre ellos " + contador + " veces");
+  
+  //
+  
+  Ejercicio3
+  
+  
+  	var dia = prompt("introduce el día");
+	var mes = prompt("introduce el mes");
+	var year = prompt("introduce el año");
+
+
+function validarfecha(dia, mes, year) {
+
+	
+	if (dia > 0 && dia<31 && mes>0 && mes<13 && year>1000 && year<2050) {
+
+	var newYear = new Date(year, mes, dia); // AAAA, MM, DD
+
+	console.log(newyear);
+
+
+	}
+    else {
+
+     console.log("Fecha introducida erronea");
+    }
+
+
+
+}

@@ -1,0 +1,9 @@
+var numero = Math.floor(Math.random() * (2 - 0)) + 0;
+console.info(numero);
+
+if (numero === 1){
+console.info("Ha salido cara");
+}
+else {
+console.info("Ha salido cruz");
+}

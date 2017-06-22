@@ -1,0 +1,11 @@
+1 - ¿Que fecha será dentro de 30 días?
+
+2 - ¿Cuantas horas han pasado desde que emepezó este curso? y... ¿en días?
+
+3 - ¿Cuantos milisengundos quedan para terminar el curso? y... ¿en horas o días?
+
+4 - ¿Que fecha será dentro de un año y 10 horas más?
+
+5 - Imprimir por consola la fecha completa (formato texto) en koreano, japones.
+
+1 - Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase.

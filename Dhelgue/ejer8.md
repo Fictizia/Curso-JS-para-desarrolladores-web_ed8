@@ -9,8 +9,25 @@
     }
 
 2 - ¿Cuantas horas han pasado desde que emepezó este curso? y... ¿en días?
+	*Horas: 
+		var diaInicio = new Date(2017, 05, 25, 10, 0, 0) ;
+		var hoy = new Date() ;	
+		var horasTranscurridas = hoy.getHours() - diaInicio.getHours() ;
 
-	// Tu solución
+		console.warn("Han transcurrido " + horasTranscurridas + " horas desde el inicio del curso") ;
+	
+	*días: 
+		
+
+		var diaInicio = new Date(2017, 04, 25).getTime() ;
+		var hoy = new Date().getTime() ;
+		var diasTrascurridos = hoy - diaInicio
+		var resultado = parseInt(diasTrascurridos/1000/60/60/24) ;
+
+		console.warn("Han transcurrido " + resultado + " días desde el inicio del curso")
+
+
+
 3 - ¿Cuantos milisengundos quedan para terminar el curso? y... ¿en horas o días?
 
 	// Tu solución

@@ -1,0 +1,84 @@
+1 - ¿Que fecha será dentro de 30 días?
+
+	// Tu solución
+  
+var hoy = new Date();
+hoy.setDate(hoy.getDate() + 30);
+hoy.toLocaleString(); 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+2 - ¿Cuantas horas han pasado desde que emepezó este curso? y... ¿en días?
+
+	// Tu solución
+  
+    var hoy = new Date();
+	  var comienzo = new Date(2017, 5, 25);
+    var transcurso = hoy.getTime() - comienzo.getTime();
+    console.log(transcurso); //milisegundos 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+3 - ¿Cuantos milisengundos quedan para terminar el curso? y... ¿en horas o días?
+
+	// Tu solución
+  
+  
+    var hoy = new Date();
+    var fin = new Date(2017, 7, 18);
+    var diferencia = fin.getTime() - hoy.getTime();
+    console.log(diferencia);//milisegundos
+  
+  
+  
+  
+  
+  
+  
+4 - ¿Que fecha será dentro de un año y 10 horas más?
+
+	// Tu solución
+  
+	var dentroDe = new Date();
+	dentroDe.setDate(dentroDe.getDate() + 365.4166666666666667);  
+	dentroDe.toLocaleString(); //  
+  
+  
+  
+  
+  
+5 - Imprimir por consola la fecha completa (formato texto) en koreano, japones.
+
+	// Tu solución
+  
+  
+    var ahora = new Date();
+    var opciones = { 
+    weekday: 'long',
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric'};   
+    console.info(ahora.toLocaleString("ja-JP", opciones));
+    console.info(ahora.toLocaleString("ko-KO", opciones));  

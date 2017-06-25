@@ -99,14 +99,19 @@ Ejercicios
 	
 	
 var texto = prompt("Introduce una frase");
-var buscador = prompt("¿Qué letra quieres buscar?");
+var letra = prompt("¿Qué letra quieres buscar?");
 var i = 0;
 var contador = 0;
 	while (i != -1){
-		var i = texto.indexOf(buscador,i);
+		var i = texto.indexOf(letra,i);
 		if (i != -1){
 			i++;
 			contador++;
 		}
 	}
-alert("La letra " + texto + " aparece un total de " + contador + " veces.");	
+// RESPUESTA
+if (contador === 0 && contador >= 1) {
+    alert("La letra " + letra + " aparece " + contador + " veces.");
+} else {
+    alert("La letra " + letra + " aparece " + contador + " vez.");
+}

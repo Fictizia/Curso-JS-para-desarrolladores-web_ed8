@@ -82,3 +82,17 @@ hoy.toLocaleString();
     day: 'numeric'};   
     console.info(ahora.toLocaleString("ja-JP", opciones));
     console.info(ahora.toLocaleString("ko-KO", opciones));  
+    
+    
+    
+    
+    
+    
+    
+    
+
+Ejercicios
+
+1 - Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase.
+
+	// Tu solución

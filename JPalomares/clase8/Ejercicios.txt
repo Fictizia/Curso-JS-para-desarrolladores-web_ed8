@@ -1,8 +1,13 @@
+Ejercicio 1:
 
+var enTreinta = new Date();
+enTreinta.setDate(enTreinta.getDate() + 30);
+enTreinta.toLocaleString(); 
+     
+     //
+     
 
-
-
-
+Ejercicio1:
 
 
 var frase = prompt ("Introduce una frase");

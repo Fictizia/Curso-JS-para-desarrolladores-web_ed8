@@ -1,6 +1,23 @@
 1 - ¿Que fecha será dentro de 30 días?
 
+    var newYear = new Date();
+    console.info("La fecha es " + newYear);
+        newYear.setDate(56); // 26 Junio + 30 Días
+    console.info("La fecha es " + newYear);
+
 2 - ¿Cuantas horas han pasado desde que emepezó este curso? y... ¿en días?
+
+	var inicio = new Date(2017, 4, 25, 19, 0, 0);
+	console.log("Fecha de inicio: " + inicio.toLocaleString());
+	var ahora = new Date();
+	console.log("Fecha actual: " + ahora.toLocaleString());
+	var diferencia = ahora - inicio;
+  
+	var horas = Math.floor( diferencia / ( 60 * 60 * 1000 ) );
+	var dias = Math.floor( diferencia / ( 24 * 60 * 60 * 1000 ) );
+	
+	console.info("Han pasado "+ horas +" horas.");
+	console.info("Han pasado "+ dias +" días.");
 
 3 - ¿Cuantos milisengundos quedan para terminar el curso? y... ¿en horas o días?
 

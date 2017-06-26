@@ -21,6 +21,19 @@
 
 3 - ¿Cuantos milisengundos quedan para terminar el curso? y... ¿en horas o días?
 
+	var inicio = new Date();
+	console.log("Fecha de inicio: " + inicio.toLocaleString());
+	var fin = new Date(2017, 6, 18, 22, 0, 0);
+	console.log("Fecha final: " + fin.toLocaleString());
+	var diferencia = fin - inicio;
+  
+	var horas = Math.floor( diferencia / ( 60 * 60 * 1000 ) );
+	var dias = Math.floor( diferencia / ( 24 * 60 * 60 * 1000 ) );
+	
+	console.info("Quedan "+ diferencia +" horas.");
+	console.info("Quedan "+ horas +" horas.");
+	console.info("Quedan "+ dias +" días.");
+
 4 - ¿Que fecha será dentro de un año y 10 horas más?
 
 5 - Imprimir por consola la fecha completa (formato texto) en koreano, japones.

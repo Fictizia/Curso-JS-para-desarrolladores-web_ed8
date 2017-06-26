@@ -36,6 +36,47 @@
 
 4 - ¿Que fecha será dentro de un año y 10 horas más?
 
+    var fechafuturo = new Date();
+    console.info("La fecha es " + fechafuturo);
+    
+    fechafuturo.setMonth(12);
+    fechafuturo.setUTCHours(10);
+   
+    console.info("La fecha es " + fechafuturo);
+
 5 - Imprimir por consola la fecha completa (formato texto) en koreano, japones.
 
+
+    console.log("KOREANO");
+    var ahora = new Date();
+    console.info(ahora.toLocaleString());
+    
+    // Código de idioma IETF para Koreano
+    console.info(ahora.toLocaleString("ko-KR"));
+    
+    // Opciones Avanzadas para fechas
+    var opciones = { 
+    weekday: 'long',
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric'};
+    console.log(ahora.toLocaleString("ko-KR", opciones));
+    
+    
+    
+    
+    console.log("JAPONES");
+    var ahora = new Date();
+    console.info(ahora.toLocaleString());
+    
+    // Código de idioma IETF para Koreano
+    console.info(ahora.toLocaleString("ja-JP-u-ca-japanese"));
+    
+    // Opciones Avanzadas para fechas
+    var opciones = { 
+    weekday: 'long',
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric'};
+    console.log(ahora.toLocaleString("ja-JP-u-ca-japanese", opciones));
 1 - Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase.

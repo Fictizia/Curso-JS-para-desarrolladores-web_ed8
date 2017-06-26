@@ -63,7 +63,7 @@
     console.log(ahora.toLocaleString("ko-KR", opciones));
     
     
-    
+    ///////////////////////////////////////////
     
     console.log("JAPONES");
     var ahora = new Date();
@@ -79,4 +79,19 @@
     month: 'long', 
     day: 'numeric'};
     console.log(ahora.toLocaleString("ja-JP-u-ca-japanese", opciones));
+    
 1 - Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase.
+
+    var cadena = "Fictizia";
+    var longitud = cadena.length;
+    letra = "i";
+    var coincidencias = 0
+    for(i = 0; i<longitud; i++){
+    	if (letra == cadena.charAt(i) ){
+	coincidencias++;
+	}
+    }
+    
+    console.log("Fictizia tiene " + cadena.length + " caracteres.");
+    console.log("La letra i se repite " + coincidencias + " veces.");
+ 

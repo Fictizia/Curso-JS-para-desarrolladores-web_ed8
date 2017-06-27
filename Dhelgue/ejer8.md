@@ -9,6 +9,7 @@
     }
 
 2 - ¿Cuantas horas han pasado desde que emepezó este curso? y... ¿en días?
+	
 	*Horas: 
 		var diaInicio = new Date(2017, 05, 25, 10, 0, 0) ;
 		var hoy = new Date() ;	

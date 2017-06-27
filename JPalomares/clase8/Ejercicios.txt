@@ -1,0 +1,26 @@
+Ejercicio 1:
+
+var enTreinta = new Date();
+enTreinta.setDate(enTreinta.getDate() + 30);
+enTreinta.toLocaleString(); 
+     
+     //
+     
+
+Ejercicio1:
+
+
+var frase = prompt ("Introduce una frase");
+
+var letra = prompt ("Introduce una letra");
+var contador = 0;
+
+
+for (var i = 0; i < frase.length; i++) {
+     if(letra === frase.charAt(i) ){
+     contador ++;
+
+     }
+}
+
+console.log("el numero de letras es " + contador)

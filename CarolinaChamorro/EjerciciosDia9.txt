@@ -1,6 +1,18 @@
 1 - Junta estos tres Arrays ["Oscar", ...], [9897667, ...], [false, ...] de tal forma que construyan un único Array anidado [["Oscar", 9897667, false], [etc...]]
 
-	// Tu solución
+		var arreglo1 = ["Oscar", "María", "Alba", "Sandra"],
+		arreglo2 = [9897667, 6656596, 65656236, 6262623],
+		arreglo3 = [false, false, false, true];
+	
+	var union = [];
+	
+	for (var i = 0; i <= arreglo1.length; i++){
+		var resumen = [arreglo1[i], arreglo2[i], arreglo3[i]];
+		anidacion.push(resumen);
+	}
+	
+	console.log("La union es %O", union);
+	
 2 - Crea un Array con 100 numeros enteros al azar. Después crea un array para almacenar los números pares y otro array para los impares.
 
 Opcional: Ordena los números pares e impares en sus respectivos arrays

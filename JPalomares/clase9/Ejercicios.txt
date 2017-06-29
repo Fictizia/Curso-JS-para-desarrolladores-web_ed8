@@ -1,0 +1,57 @@
+1 - Junta estos tres Arrays ["Oscar", ...], [9897667, ...], [false, ...] de tal forma que construyan un único Array anidado [["Oscar", 9897667, false], [etc...]]
+
+	// Tu solución
+
+
+var array1 = ["Oscar", "test"];
+var array2 = [9897667,"Hola"];
+var array3 = [false,"Adios"];
+
+	var juntarArrays = [array1, array2, array3 ];
+	var juntarArrays = array1.concat(array2,array3);
+	var juntarArrays = array1.concat([array2],[array3]);
+
+//
+
+2 - Crea un Array con 100 numeros enteros al azar. Después crea un array para almacenar los números pares y otro array para los impares.
+
+Opcional: Ordena los números pares e impares en sus respectivos arrays
+	// Tu solución
+  
+var array1 = [];
+var arrayPares = [];
+var arrayImpares = [];
+
+for (i=0;i<100;i++){
+		var numeroazar = Math.round(Math.floor((Math.random() * 1000) + 1));
+		array1[i] = numeroazar;
+
+		if(array1[i]%2===0) {
+
+		arrayPares[i] = array1[i];
+
+		}
+
+		else {
+
+		arrayImpares[i] = array1[i];
+
+		}
+
+}
+
+
+3 - Vamos a gestionar la lista de asistentes de un evento.
+
+Características:
+
+Cada asistente recibirá el identificador de su posición en el Array.
+El identificador no puede cambiar una vez reservado el asiento.
+Los asistentes pueden darse de baja, y el asiento que ocupaban queda libre.
+Los nuevos asistentes seran asigandos primero a asientos desocupados.
+Opcional:
+
+Verifica antes de asignar un asistente que no se registro previamente.
+	// Tu solución
+
+

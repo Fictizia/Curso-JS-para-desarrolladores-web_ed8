@@ -1,0 +1,44 @@
+1
+
+var theBigDay = new Date ();
+	theBigDay.setDate(theBigDay.getDate() + 30);  
+	theBigDay.toLocaleString();
+
+
+2
+
+var diaa = new Date(2017, 5, 25);
+date.setHours(19, 0, 0, 0);
+var diab = new Date(2017, 6, 27);
+var diac=(diab-diaa);
+diac.toTimeString();
+
+
+
+
+
+
+
+3
+
+
+var diaa = new Date(2017, 6, 27);
+var diab = new Date(2017, 7, 18);
+var diac=(diab-diaa);
+console.log("quedan "+diac+ "milisegundos para acabar");
+
+
+
+
+
+var texto = prompt("introduce una frase");
+var letra = prompt("introduce una letra y te diré cuantas veces aparece en la frase");
+var textoAr = texto.split();
+
+var contador = 0;
+for (var i=0; i<texto.length; i++) {
+if (textoAr.includes(letra)){
+	contador=contador+1;
+}
+}
+console.log(contador);

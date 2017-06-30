@@ -1,0 +1,58 @@
+3 - Vamos a gestionar la lista de asistentes de un evento.
+
+Características:
+
+Cada asistente recibirá el identificador de su posición en el Array.
+El identificador no puede cambiar una vez reservado el asiento.
+Los asistentes pueden darse de baja, y el asiento que ocupaban queda libre.
+Los nuevos asistentes seran asigandos primero a asientos desocupados.
+Opcional:
+
+Verifica antes de asignar un asistente que no se registro previamente.
+
+
+var numeroAsistentes = prompt("Introduce el número de asistentes");
+
+
+var Asistentes = [];
+
+
+for (i=0; i<numeroAsistentes; i++) {
+
+
+	Asistentes[i] = i;
+
+
+	console.log("El identificador del asistente: " + Asistentes[i] + " es " + i );
+}
+
+
+var preguntarBaja = prompt("A que asistente quieres dar de baja?");
+
+
+	Asistentes[preguntarBaja] = "Baja";
+
+	console.log(Asistentes);
+
+
+var nuevosAsis = prompt("Nuevo asistente?");
+
+	var contador2 = 0;
+
+
+for (d=0; d<Asistentes.length; d++) {
+	
+	if(Asistentes[d]==="Baja" ) {
+		var contador2 = 2;
+		Asistentes[d]=nuevosAsis;
+		break;
+	}
+
+
+
+}
+
+	if(contador2 != 2) {
+
+	Asistentes.push = nuevosAsis;
+	}

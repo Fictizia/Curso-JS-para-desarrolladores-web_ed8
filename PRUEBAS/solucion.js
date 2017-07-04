@@ -39,7 +39,13 @@ function add(name){
 */
 
 function remove (name) {
-	// 	- cambiar a undefined
+	var namePosition = list.indexOf(name);
+
+	if(namePosition === -1){
+		console.log(name, "- not found!");
+	} else {
+		list[namePosition] = undefined;
+	}
 }
 
 
@@ -58,6 +64,15 @@ console.assert(list[1] === "me", "add('me') - Wrong undefined replacement");
 add("me2");
 console.assert(list.length === 4, "add('me2') - Wrong length");
 console.assert(list[3] === "me2", "add('me2') - Wrong new element");
+
+
+// Test remove()
+remove("me2")
+console.assert(list.length === 4, "remove('me2') - Wrong length");
+console.assert(list[3] === undefined, "add('me2') - Wrong replacement");
+
+remove("nothing");
+console.assert(list.length === 4, "remove('me2') - Wrong length");
 
 
 

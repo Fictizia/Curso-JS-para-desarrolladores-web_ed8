@@ -24,12 +24,13 @@ funcion añadir
 */
 
 function add(name){
-	/*
-		- (opt) ver si existe
-	*/
+	if(list.indexOf(name) === -1){
+		var emptyPosition = list.indexOf(undefined);
+		emptyPosition === -1 ? list.push(name) : list[emptyPosition] = name;
+	} else {
+		console.log(name, "- is in the list!");
+	}
 
-	var emptyPosition = list.indexOf(undefined);
-	emptyPosition === -1 ? list.push(name) : list[emptyPosition] = name;
 
 }
 
@@ -40,7 +41,6 @@ function add(name){
 
 function remove (name) {
 	var namePosition = list.indexOf(name);
-
 	if(namePosition === -1){
 		console.log(name, "- not found!");
 	} else {
@@ -54,7 +54,7 @@ function remove (name) {
 // Scene Validation
 console.assert(list.length === 3, "List - Wrong elements in Array");
 console.assert(list[1] === undefined, "List - no undefined element");
-
+console.assert(list[0] === "Bob", "List - Bob is first");
 
 // Test add()
 add("me");
@@ -65,11 +65,14 @@ add("me2");
 console.assert(list.length === 4, "add('me2') - Wrong length");
 console.assert(list[3] === "me2", "add('me2') - Wrong new element");
 
+add("Bob");
+console.assert(list.length === 4, "add('Bob') - Wrong length");
+
 
 // Test remove()
 remove("me2")
 console.assert(list.length === 4, "remove('me2') - Wrong length");
-console.assert(list[3] === undefined, "add('me2') - Wrong replacement");
+console.assert(list[3] === undefined, "remove('me2') - Wrong replacement");
 
 remove("nothing");
 console.assert(list.length === 4, "remove('me2') - Wrong length");

@@ -1,51 +1,38 @@
-/* ----- REQUISITOS -----
-
-**Características:**
-
-- [] Cada asistente recibirá el identificador de su posición en el Array.
-- [] El identificador no puede cambiar una vez reservado el asiento.
-- [] Los asistentes pueden darse de baja, y el asiento que ocupaban queda libre.
-- [] Los nuevos asistentes seran asigandos primero a asientos desocupados.
-
-
-**Opcional:**
-
-- [] Verifica antes de asignar un asistente que no se registro previamente.
-
-*/
-
-/* ----- SOLUCIÓN ----- */
-
-// Lista clientes
 var list = ["Bob", undefined, "Louis"];
 
-/* 
-funcion añadir
-*/
+/**
+ * Add people in the list
+ * @param {string} name Somebody's name
+ * @return {boolean} success or not 
+ */
 
-function add(name){
-	if(list.indexOf(name) === -1){
-		var emptyPosition = list.indexOf(undefined);
-		emptyPosition === -1 ? list.push(name) : list[emptyPosition] = name;
-	} else {
-		console.log(name, "- is in the list!");
-	}
+function add(name) {
+    if (name && typeof(name) === "string" && list.indexOf(name) === -1) {
+        var emptyPosition = list.indexOf(undefined);
+        emptyPosition === -1 ? list.push(name) : list[emptyPosition] = name;
+        return true;
+    } else {
+        return false;
+    }
 
 
 }
 
+/**
+ * Remove people in the list
+ * @param {string} name Somebody's name
+ * @return {boolean} success or not 
+ */
 
-/*
- función para quitar...
-*/
-
-function remove (name) {
-	var namePosition = list.indexOf(name);
-	if(namePosition === -1){
-		console.log(name, "- not found!");
-	} else {
-		list[namePosition] = undefined;
-	}
+function remove(name) {
+    // validacion por undefined??
+    var namePosition = list.indexOf(name);
+    if (name && typeof(name) === "string" && namePosition !== -1) {
+        list[namePosition] = undefined;
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
@@ -56,26 +43,37 @@ console.assert(list.length === 3, "List - Wrong elements in Array");
 console.assert(list[1] === undefined, "List - no undefined element");
 console.assert(list[0] === "Bob", "List - Bob is first");
 
-// Test add()
-add("me");
+// -- Test add()
+
+// Case: No argument
+console.assert(add() === false, "add() - Wrong return");
+console.assert(list.length === 3, "add() - Wrong length");
+
+// Case: Replace undefined
+console.assert(add("me") === true, "add('me') - Wrong return");
 console.assert(list.length === 3, "add('me') - Wrong length");
 console.assert(list[1] === "me", "add('me') - Wrong undefined replacement");
 
-add("me2");
+// Case: Add to the end (push)
+console.assert(add("me2") === true, "add('me2') - Wrong return");
 console.assert(list.length === 4, "add('me2') - Wrong length");
 console.assert(list[3] === "me2", "add('me2') - Wrong new element");
 
-add("Bob");
+// Case: Exist Name
+console.assert(add("Bob") === false, "add('Bob') - Wrong return");
 console.assert(list.length === 4, "add('Bob') - Wrong length");
 
+// -- Test remove()
 
-// Test remove()
-remove("me2")
+// Case: No argument
+console.assert(remove() === false, "remove() - Wrong return");
+console.assert(list.length === 4, "remove() - Wrong length");
+
+// Case: Name match
+console.assert(remove("me2") === true, "remove('me2') - Wrong return");
 console.assert(list.length === 4, "remove('me2') - Wrong length");
 console.assert(list[3] === undefined, "remove('me2') - Wrong replacement");
 
-remove("nothing");
+// Case: NO Name match
+console.assert(remove("nothing") === false, "remove('me2') - Wrong return");
 console.assert(list.length === 4, "remove('me2') - Wrong length");
-
-
-

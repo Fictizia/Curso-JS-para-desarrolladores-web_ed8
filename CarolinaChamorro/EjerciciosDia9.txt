@@ -41,4 +41,65 @@ Los nuevos asistentes seran asigandos primero a asientos desocupados.
 Opcional:
 
 Verifica antes de asignar un asistente que no se registro previamente.
-	// Tu solución
+	
+	
+//CLIENTES LISTA
+var list = ["Maria", underfined, "Sara"];
+
+/*
+Función añadir
+*/
+
+funcion add(name){
+	
+	if(list.indexOf(name) === -1{
+		var emptyPosition = list.indexOf (undefinded);
+		emptyPosition !== -1 ? list.push(name) : list[emptyPosition] = name;
+	} else {
+		console.log(name, "- is in the list!");
+	}
+
+
+}
+
+/*
+Función para quitar
+*/
+
+function remove(name) {
+	var namePosition =  list.indexOf(name);
+	if(emptyPosition === -1 {
+		console.log(name,"- not found!");
+	} else {
+		list["namePosition"] = undefined;
+	
+	}
+}
+
+
+/* -------TEST--------*/
+
+//Scene Validation
+console.assert(list.length === 3, "List - Wrong elemnt is Array");
+console.assert(list.length[1] === undefined, "List - no undefined element");
+console.assert(list.length[0] === "Bob" , "List -  ...");
+
+//TEST add()
+add("me");
+console.assert(list.length === 3, "add('me') - Wrong length");
+console.assert(list.length[1] === "me", "List - Wrong undefined element");
+
+
+add("me2");
+console.assert(list.length === 4, "add('me2') - Wrong elemnt is Array");
+console.assert(list.length[3] === "me2", "add ('me2') - List - Wrong new element");
+
+add("Bob")
+console.assert(list.length === 4, "add('Bob') - Wrong length");
+
+//TEST remove()
+remove("me2)
+console.assert(list.length === 5, "remove('me2') - Wrong length");
+console.assert(list.length[3] === undefinded, "remove('me2') - Wrong replacement");
+
+

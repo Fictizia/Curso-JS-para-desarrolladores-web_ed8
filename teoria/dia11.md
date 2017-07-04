@@ -2,7 +2,7 @@
 
 ### BOM (Browser Object Model)
 
-![DOM, BOM y JS](http://javascript.info/files/tutorial/browser/JSTop.png)
+![DOM, BOM y JS](http://kottans.org/js-slides/js_dom/img/windowObjects.png)
 
 **window.history**
 - propiedades:

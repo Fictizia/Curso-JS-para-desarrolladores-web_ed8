@@ -17,16 +17,24 @@
 /* ----- SOLUCIÓN ----- */
 
 // Lista clientes
+var list = ["Bob", "Louis"];
 
 /* 
 funcion añadir
-	- añadir en hueco o añadir al final
-	- (opt) ver si existe
 */
+
+function add(name){
+	/*
+		- añadir en hueco o añadir al final
+		- (opt) ver si existe
+	*/
+}
 
 
 /*
  función para quitar...
-	- cambiar a undefined
-	- 
 */
+
+function remove (name) {
+	// 	- cambiar a undefined
+}

@@ -44,22 +44,26 @@ Verifica antes de asignar un asistente que no se registro previamente.
 	
 	
 //CLIENTES LISTA
-var list = ["Maria", underfined, "Sara"];
+var list = ["Bob", underfined, "Sara"];
+
+/**
+* Add people list 
+* @param {string} name Somebody's name
+* @return {boolean} sucess or not
+
+*/
 
 /*
 Función añadir
 */
 
 funcion add(name){
-	
 	if(name && typeof(name) === "string" &&  list.indexOf(name) === -1{
 		var emptyPosition = list.indexOf(undefinded);
 		emptyPosition !== -1 ? list.push(name) : list[emptyPosition] = name;
 		retutn true
 	} else {
-		
 		return false;
-		//console.log(name, "- is in the list!");
 	}
 
 
@@ -88,27 +92,34 @@ console.assert(list.length[1] === undefined, "List - no undefined element");
 console.assert(list.length[0] === "Bob" , "List -  Bob is first");
 
 //TEST add()
-//
+
+//Case: No argument
 console.assert(add() === false, "add() - Wrong length")
 console.assert(list.length === 3, "add() - Wrong length");
 
-//
+//Case: Replace undefined
 console.assert(add("me") === true, "add('me') - Wrong return")
 console.assert(list.length === 3, "add('me') - Wrong length");
 console.assert(list.length[1] === "me", "List - Wrong undefined element");
 
-//
-add("me2");
+//Case: Add to the end(push)
+console.assert(add("me2") === true, "add('me2') - Wrong return")
 console.assert(list.length === 4, "add('me2') - Wrong elemnt is Array");
 console.assert(list.length[3] === "me2", "add ('me2') - List - Wrong new element");
 
-//
-add("Bob")
+//Case: Exist Name
+console.assert(add("Bob") === false, "add('Bob') - Wrong return")
 console.assert(list.length === 4, "add('Bob') - Wrong length");
 
-//TEST remove()
-remove("me2)
+//TEST remove() (faltan cosas)
+
+//Case: No argument
 console.assert(list.length === 5, "remove('me2') - Wrong length");
 console.assert(list.length[3] === undefinded, "remove('me2') - Wrong replacement");
+
+
+
+
+
 
 

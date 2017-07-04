@@ -52,11 +52,14 @@ Función añadir
 
 funcion add(name){
 	
-	if(list.indexOf(name) === -1{
-		var emptyPosition = list.indexOf (undefinded);
+	if(name && typeof(name) === "string" &&  list.indexOf(name) === -1{
+		var emptyPosition = list.indexOf(undefinded);
 		emptyPosition !== -1 ? list.push(name) : list[emptyPosition] = name;
+		retutn true
 	} else {
-		console.log(name, "- is in the list!");
+		
+		return false;
+		//console.log(name, "- is in the list!");
 	}
 
 
@@ -82,18 +85,24 @@ function remove(name) {
 //Scene Validation
 console.assert(list.length === 3, "List - Wrong elemnt is Array");
 console.assert(list.length[1] === undefined, "List - no undefined element");
-console.assert(list.length[0] === "Bob" , "List -  ...");
+console.assert(list.length[0] === "Bob" , "List -  Bob is first");
 
 //TEST add()
-add("me");
+//
+console.assert(add() === false, "add() - Wrong length")
+console.assert(list.length === 3, "add() - Wrong length");
+
+//
+console.assert(add("me") === true, "add('me') - Wrong return")
 console.assert(list.length === 3, "add('me') - Wrong length");
 console.assert(list.length[1] === "me", "List - Wrong undefined element");
 
-
+//
 add("me2");
 console.assert(list.length === 4, "add('me2') - Wrong elemnt is Array");
 console.assert(list.length[3] === "me2", "add ('me2') - List - Wrong new element");
 
+//
 add("Bob")
 console.assert(list.length === 4, "add('Bob') - Wrong length");
 

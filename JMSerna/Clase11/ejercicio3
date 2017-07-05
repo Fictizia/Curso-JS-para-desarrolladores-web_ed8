@@ -1,0 +1,27 @@
+
+
+function cambiar() {
+  
+  
+ // detectar los elementos
+ var fotos = document.getElementsByClassName("td-module-thumb");
+ 
+ 
+ //imagen a insertar
+ var gatos = "<img width='200' height='200' src='http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg'/>";
+  
+ 
+  for (var i = 0; i < fotos.length; i++){
+	  
+	   //accion de insertar
+	fotos[i].innerHTML = gatos;
+  
+	  
+  }
+ 
+ 
+}
+cambiar();
+
+
+

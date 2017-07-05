@@ -1,0 +1,15 @@
+function metro(){
+  
+  
+ var lineas = document.getElementsByClassName('bloquet');  
+  
+  
+  
+  for (var i = 0; i < lineas.length; i++){
+  
+    console.log(lineas[i].innerText)
+    
+  }
+  
+  
+}

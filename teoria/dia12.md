@@ -7,7 +7,7 @@ Objetivos Adicionales:
 - Además debería de seguir actualizando la cuenta atrás de manera dinámica.
 - Los datos horarios siempre deben mostrarse con dos dígitos, añadiendo un cero a la izquierda cuando sea necesario.
 
-Nota: Podría ser muy útil usar *setTimeout* para lanzar una función cada cierto tiempo.
+Nota: Podría ser muy útil usar *setInterval* para lanzar una función cada cierto tiempo.
 
 ```javascript
 	// Tu solución

@@ -17,7 +17,7 @@ var expendedora = {
 //funcion de consultar saldo
 
 function consultaSaldo(){
-  var texto = document.getElementsByTagName('p');
+
   var user = prompt("Inserte usuario");
   var contrasena = prompt("Inserte contraseña");
   var saldo = 0;
@@ -34,9 +34,9 @@ function consultaSaldo(){
   }//fin for
 
   if (!datosCorrectos){
-    document.querySelector('#resultado p').innerHTML = "Datos Incorrectos";
+    document.querySelector('#resultado p').innerHTML = "<span class='alert alert-danger'>Datos Incorrectos</span>";
   }else{
-    document.querySelector('#resultado p').innerHTML = "Su saldo es de <span class='label label-success'>" + saldo + "</span>";
+    document.querySelector('#resultado p').innerHTML = "Su saldo es de <span class='alert alert-success'>" + saldo + "</span>";
   }
 
 }//fin consultaSaldo

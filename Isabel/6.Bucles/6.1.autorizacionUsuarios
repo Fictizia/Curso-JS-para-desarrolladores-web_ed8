@@ -1,0 +1,26 @@
+// Diseña un algoritmo para identificar a los clientes autorizados a entrar a nuestro sistema.
+//Características:
+//La palabra clave es "Fictizia mola mucho"
+//Solo existen tres intentos
+//Si se pasan los tres intentos. Se despliega un mensaje informativo.
+
+
+var clave = prompt("Dime tu clave");
+var acierto = "Fictizia mola mucho";
+
+for (i=0; i>=3; i++)  {
+
+     if (clave == acierto && i != 3)
+    {
+      info.log("Hola usuario");
+    }
+    else 
+    {
+    info.log("Tu contraseña no es correcta");
+    }
+    
+    
+    if (i==3) {
+      alert("Ya no puedes intentarlo más veces");
+    }
+}

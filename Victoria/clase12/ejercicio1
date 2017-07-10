@@ -1,0 +1,84 @@
+var ahora = new Date();
+var final = new Date(2017,6,18,22,0,0);
+
+
+
+function contador(){
+				var diferencia=(final.getTime()-ahora.getTime());
+        var dias=Math.floor(diferencia/86400000);
+        var diferencia=diferencia-(86400000*dias);
+        var horas=Math.floor(diferencia/3600000);
+        var diferencia=diferencia-(3600000*horas);
+        var minutos=Math.floor(diferencia/60000);
+        var diferencia=diferencia-(60000*minutos);
+        var segundos=Math.floor(diferencia/1000);
+
+console.log("quedan "+dias+" días "+horas+" horas "+minutos+" minutos "+segundos+ " segundos");
+
+}
+
+if (ahora<final){
+var repetir = setInterval(contador, 10000);
+  console.log(repetir);
+
+    }
+  else{
+    console.log("El curso ha finalizado");
+  }
+
+
+
+//PRUEBA CON HTML
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Molan los Doodles!</title>
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+   <div id="contenido"></div>
+   <script type="text/javascript">
+    var ahora = new Date();
+	var final = new Date(2017,6,18,22,0,0);
+
+
+
+	function contador(){
+					var diferencia=(final.getTime()-ahora.getTime());
+	        var dias=Math.floor(diferencia/86400000);
+	        var diferencia=diferencia-(86400000*dias);
+	        var horas=Math.floor(diferencia/3600000);
+	        var diferencia=diferencia-(3600000*horas);
+	        var minutos=Math.floor(diferencia/60000);
+	        var diferencia=diferencia-(60000*minutos);
+	        var segundos=Math.floor(diferencia/1000);
+
+	console.log("quedan "+dias+" días "+horas+" horas "+minutos+" minutos "+segundos+ " segundos");
+
+	}
+
+	if (ahora<final){
+	var repetir = setInterval(contador, 10000);
+	  console.log(repetir);
+
+	    }
+	  else{
+	    console.log("El curso ha finalizado");
+	  }
+
+	   var contenidoHTML = <h1>${repetir}</h1>
+
+
+	   	
+	   	document.getElementById("contenido").innerHTML = contenidoHTML;   
+   </script>
+   </body>
+   </html>

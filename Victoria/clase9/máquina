@@ -1,6 +1,4 @@
 
-
-
 Práctica 1 - Diseña un script para gestionar por consola una máquina expendedora
 
 Características:
@@ -12,7 +10,8 @@ La maquina no concederá creditos, solo trabaja en base a los puntos disponibles
 Para agilizar la reposición de lo consumido... la maquina debe controlar en stock
 
 
-Paso 1 - Creamos los primeros objetos básicos:
+
+------ Paso 1 - Creamos los primeros objetos básicos: ------
 
 Maquina Expendedora (Objeto)
 Productos (Array)
@@ -29,7 +28,7 @@ var maquina = {
 
 
 	
-Paso 2 - Creamos los primeros perfiles en el Array de clientes:
+------ Paso 2 - Creamos los primeros perfiles en el Array de clientes: ------
 
 Propiedades:
 Nombre
@@ -60,7 +59,7 @@ console.log(maquina);
 
 
 
-Paso 3 - Creamos varios métodos para gestionar a los clientes y sus necesidades
+------ Paso 3 - Creamos varios métodos para gestionar a los clientes y sus necesidades ------
 
 Metodos:
 
@@ -80,8 +79,8 @@ Evitaremos dar de alta usuarios que no esten debidamente cumplimentados
 Protegeremos las funciones de gestión de usuarios con la contraseña ficticiaMola
 
 var maquina = {
-  productos: [[art],[posic],[stock], [precio]],
-  clientes: [[nombre],[saldo]],
+  productos: [art, posic, stock,precio],
+  clientes: [nombre,saldo],
 };
 
 var art = ["sandwich","fanta","agua"];
@@ -89,16 +88,36 @@ var posic = [1,2,3];
 var stock = [7,12,25];
 var precio = [120, 60, 60];
 
-var nombre = ["Laura","Luís","pedro"];
+var nombre = ["Laura","Luís","Pedro"];
+var pass = ["laura1","luis1","pedro1"]
 var saldo = [1270,930,630];
 
 
 
+var verSaldo = prompt("Indica el usuario para conocer su saldo");
 
+for (var i = 0; i < nombre.length; i++) {
+	        if (nombre[i] === verSaldo) {
+	        	var verPass = prompt("verifica la contraseña de usuario");
+	        	if (verPass=pass[i]) {
+	            console.log(saldo[i]);
+	            }
+	        }
+	 	else{
+	 	   console.log(-1);
+	 	}
+	    }
+	    
 
-var verSaldo = prompt("Indica el usuario para conocer su salgo");
-var devolverSaldo = nombre.findIndex(verSaldo);
-console.log(devolverSaldo);
+var gastos=[];
+function masGasto () {}
+function consultarGasto (){
+	
+}
+ function nuevoCliente (){}
+
+ function eliminarCliente (){}
+
 
 
 

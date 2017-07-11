@@ -334,6 +334,7 @@ Características:
 **2 -** Hagamos la [web del Metro](https://www.metromadrid.es/es/index.html) más divertida.
 - Saca el estado actual de todas las líneas del metro de Madrid por consola.
 
+- Opción A
 ```javascript
 	var lineas = document.querySelectorAll('.bloquet');
 	
@@ -342,8 +343,19 @@ Características:
 	  
 	  if(!estado) estado = lineas[i].querySelector('.circulacion > .r > a');
 	  
+	  if(!estado) estado = lineas[i].querySelector('.circulacion > .n > a');
+	  
 	  if(estado) console.log(estado.innerText.trim());
 	  
+	}
+```
+
+- Opción B
+```javascript
+	var lineas = document.querySelectorAll('.bloquet .circulacion  a');
+	
+	for (var i = 0; i < lineas.length; i++) {
+	  if(lineas[i]) console.log(lineas[i].innerText.trim());
 	}
 ```
 

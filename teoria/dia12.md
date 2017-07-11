@@ -795,7 +795,42 @@ Todos los ejercicios deben seguir el mismo proceso:
 **5 -** Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase que introduciremos por teclado.
 
 ```javascript
-	// Tu solución
+	// Tests
+	QUnit.module( "Módulo de cuantasVeces()", function(){
+
+	    QUnit.test("Verificar resultados", function() {
+	    	deepEqual(cuantasVeces("a", "amigas, amigos, y demas... gentes"), 4, "(a) 4 veces en \"amigas, amigos, y demas... gentes\"");
+	    	deepEqual(cuantasVeces("x", "amigas, amigos, y demas... gentes"), 0, "(x) 0 veces en \"amigas, amigos, y demas... gentes\"");
+	    	notOk(cuantasVeces(), "false, sin parámetros");
+	    	notOk(cuantasVeces(1, 1123), "false, usando números");
+	    	notOk(cuantasVeces({letra:"a"}, {texto:"hola"}), "false, usando objetos");
+	    }); 
+
+    });
+
+	// Código
+	
+	function cuantasVeces(letra, texto) {
+		
+		if (typeof letra === 'string' && typeof texto === 'string') {
+			
+			var totalVeces = 0;
+			var seleccionTexto = texto.split("");
+			
+			for (var i = 0; i <= seleccionTexto.length; i++) {
+				
+				if (seleccionTexto[i] === letra){
+					totalVeces++
+				};
+				
+			};
+
+			return totalVeces;
+
+		} else {
+			return false;
+		}
+	}
 ```
 
 **6 -** Diseña un algoritmo introducido un numero y pasarlo a número romanos.

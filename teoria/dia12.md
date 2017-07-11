@@ -499,7 +499,46 @@ Todos los ejercicios deben seguir el mismo proceso:
 	- Comprueba si todos los parámetros son iguales
 
 ```javascript
-	// Tu solución
+	// Tests
+	QUnit.module( "Módulo de compararVariosNumeros()", function(){
+		
+		var condicion = "3 es mayor";
+		var condicion2 = "Son iguales";
+
+	    QUnit.test("con números", function() {
+	        deepEqual(compararVariosNumeros(2,1,3), condicion, "compararVariosNumeros(2,1,3) 3 es el mayor");
+	        deepEqual(compararVariosNumeros(1,3,2), condicion, "compararVariosNumeros(1,3,2) 3 es el mayor");
+	        deepEqual(compararVariosNumeros(3,2,1), condicion, "compararVariosNumeros(3,2,1) 3 es el mayor");
+	        deepEqual(compararVariosNumeros(3,3,3), condicion2, "compararVariosNumeros(3,3,3) son iguales");
+	    }); 
+
+	    QUnit.test("con cadenas", function() {
+	        deepEqual(compararVariosNumeros("2","1","3"), condicion, "compararVariosNumeros(\"2\",\"1\",\"3\") 3 es el mayor");
+	        deepEqual(compararVariosNumeros("1","3","2"), condicion, "compararVariosNumeros(\"1\",\"3\",\"2\") 3 es el mayor");
+	        deepEqual(compararVariosNumeros("3","2","1"), condicion, "compararVariosNumeros(\"3\",\"2\",\"1\") 3 es el mayor");
+	        deepEqual(compararVariosNumeros("3","3","3"), condicion2, "compararVariosNumeros(\"3\",\"3\",\"3\") son iguales");
+	    }); 
+    });
+
+	// Código
+	function compararVariosNumeros (valor1, valor2, valor3) {
+
+		valor1 = parseFloat(valor1);
+		valor2 = parseFloat(valor2);
+		valor3 = parseFloat(valor3);
+
+		if (valor1 > valor2 & valor1 > valor3) {
+			return valor1 + " es mayor";
+		} else if (valor1 === valor2 && valor2 === valor3) {
+			return "Son iguales";
+		} else {
+			if(valor2 > valor3){
+				return valor2 + " es mayor";
+			} else {
+				return valor3 + " es mayor";
+			}
+		};
+	}
 ```
 
 

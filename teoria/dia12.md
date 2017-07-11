@@ -839,7 +839,105 @@ Todos los ejercicios deben seguir el mismo proceso:
 ![numeros_romanos](https://eloviparo.files.wordpress.com/2009/09/numeros-romans.jpg?w=466&h=172)
 
 ```javascript
-	// Tu solución
+	// Tests
+	QUnit.module( "Módulo de conversionRomana()", function(){
+
+	    QUnit.test("Verificar números", function() {
+			deepEqual(conversionRomana(1), "I", "1 = I");
+			deepEqual(conversionRomana(4), "IV", "4 = IV");
+			deepEqual(conversionRomana(5), "V", "5 = V");
+			deepEqual(conversionRomana(6), "VI", "6 = VI");
+			deepEqual(conversionRomana(7), "VII", "7 = VII");
+			deepEqual(conversionRomana(8), "VIII", "8 = VIII");
+			deepEqual(conversionRomana(9), "IX", "9 = IX");
+			deepEqual(conversionRomana(10), "X", "10 = X");
+			deepEqual(conversionRomana(12), "XII", "12 = XII");
+			deepEqual(conversionRomana(23), "XXIII", "23 = XXIII");
+			deepEqual(conversionRomana(34), "XXXIV", "23 = XXIII");
+			deepEqual(conversionRomana(45), "XLV", "45 = XLV");
+			deepEqual(conversionRomana(50), "L", "50 = L");
+	    }); 
+
+	    QUnit.test("Verificar cadenas", function() {
+			deepEqual(conversionRomana("1"), "I", "\"1\" = I");
+			deepEqual(conversionRomana("4"), "IV", "\"4\" = IV");
+			deepEqual(conversionRomana("5"), "V", "\"5\" = V");
+			deepEqual(conversionRomana("6"), "VI", "\"6\" = VI");
+			deepEqual(conversionRomana("7"), "VII", "\"7\" = VII");
+			deepEqual(conversionRomana("8"), "VIII", "\"8\" = VIII");
+			deepEqual(conversionRomana("9"), "IX", "\"9\" = IX");
+			deepEqual(conversionRomana("10"), "X", "\"10\" = X");
+			deepEqual(conversionRomana("12"), "XII", "\"12\" = XII");
+			deepEqual(conversionRomana("23"), "XXIII", "\"23\" = XXIII");
+			deepEqual(conversionRomana("34"), "XXXIV", "\"23\" = XXIII");
+			deepEqual(conversionRomana("45"), "XLV", "\"45\" = XLV");
+			deepEqual(conversionRomana("50"), "L", "\"50\" = L");
+	    });
+
+	    QUnit.test("Verificar otros", function() {
+			notOk(conversionRomana(51), "51 - fuera de rango");
+			notOk(conversionRomana(-1), "-1 - fuera de rango");
+	    }); 
+    });
+
+	// Código
+	
+	function conversionRomana(numero) {
+		
+		numero = parseInt(numero);
+
+		var numeroOriginal = numero;
+	  
+
+		if (numero <= 50 && numero > 0){
+
+	    var numeroRomano = "";
+	    
+			while(numero > 0){
+				
+				if(numero === 50){
+					numeroRomano = "L";
+					numero = 0;
+				} else if (numero >= 40 && numero < 50){
+					numeroRomano += "XL";
+					numero -= 40;
+				} else if (numero >= 10 && numero < 40){
+					numeroRomano += "X";
+					numero -= 10;
+				} else if(numero === 9){
+					numeroRomano += "IX";
+					numero -= 9;
+				} else if(numero === 8){
+					numeroRomano += "VIII";
+					numero -= 8;
+				} else if (numero === 7){
+					numeroRomano += "VII";
+					numero -= 7;
+				} else if (numero === 6){
+					numeroRomano += "VI";
+					numero -= 6;
+				} else if (numero === 5) {
+					numeroRomano += "V";
+					numero -= 5;
+				} else if (numero === 4){
+					numeroRomano += "IV";
+					numero -= 4;				
+				} else if(numero <= 3 && numero > 0){
+					numeroRomano += "I";
+					numero -= 1;
+				}
+	      
+			}
+
+			return numeroRomano;
+
+		} else {
+	    
+			return false;
+		
+	  }
+
+	}
 ```
 
 **7 -** Agrupa todo el código y los test:

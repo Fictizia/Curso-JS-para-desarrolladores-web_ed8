@@ -1,72 +1,31 @@
-	var numero = 450;
-	var otroNumero = 23;
+// 1 - Saca una lista de los cursos disponibles en Fictizia en las 4 areas de formación y conviertelo en Markdown. Características:
 
-	function sumaCuadrados (a, b) {
-		var numero = a;
-		var otroNumero = b;
-		var calculo = (numero*numero) + (otroNumero*otroNumero);
-		console.log("\"numero\" es \""+numero+"\", local");
-		console.log("\"otroNumero\" es \""+otroNumero+"\", local");
-	};
-
-	function verificarGlobales() {
-		console.log("\"numero\" es \""+numero+"\", global");
-		console.log("\"otroNumero\" es \""+otroNumero+"\", global");
-	};
+// Cada Bloque de cursos debe estar identificado por el título correspondiente.
+// Cada curso debe contener el enlace al mismo y especificar el número de horas entre parentesis.
 
 
+	// Simular el Click (Opcional)
+	document.getElementById('web_Tab').click();
 
-var numero = 2;
-var otroNumero = 4;
+	var areas = document.querySelectorAll('#areas > section');
+	var markdown = "# Cursos de Fictizia\n\n";
 
-function sumaCuadrados (a, b) {
-	var numero = a;
-	var otroNumero = b;
-	var calculo = (numero*numero) + (otroNumero*otroNumero);
-	console.log("\"numero\" es \""+numero+"\", local");
-	console.log("\"otroNumero\" es \""+otroNumero+"\", local");
-};
+	for (var i = 0; areas.length > i; i++) {
 
-function verificarGlobales() {
-	console.log("\"numero\" es \""+numero+"\", global");
-	console.log("\"otroNumero\" es \""+otroNumero+"\", global");
-};
+	    var area = areas[i].querySelectorAll('li > a');
+	    markdown += "## " + areas[i].querySelector('h2').innerText.trim() + "\n\n";
+	    markdown += "**Total de cursos: " + area.length + "**\n";
 
+	    for (var j = 0; area.length > j; j++) {
+	            var link = area[j].getAttribute("href");
+	            var horas = area[j].querySelector(".contextualInfo").innerText.trim();
+	                horas = horas.replace("Curso de ", "").replace("Workshop de ").replace("Master de ", "").replace("undefined", "");
+	            var titulo = area[j].querySelector("strong").innerText.trim();
+	            var curso = "- [" + titulo + " (" + horas + ")](" + link + ")\n";
+	            markdown += curso;
+	    }
+	    markdown += "\n\n"
+	}
 
+	console.log(markdown);
 
-
-
-
-
-function hacerSurf(traje, tabla, callback) {
-    console.info('Me voy a surfear.\n\nNo me puedo olvidar de el ' + traje + 'y la ' + tabla);
-    callback();
-}
-
-comerSandwich('traje', 'tabla', function() {
-    console.info('Ya terminé...');
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function comerSandwich(elemento1, elemento2, callback) {
-    console.info('ñam ñam... empiezo con el sándwich.\n\nMe gusta porque tiene tiene ' + elemento1 + ', ' + elemento2);
-    callback();
-}
-
-comerSandwich('jamón', 'queso', function() {
-    console.info('Ya terminé...');
-});

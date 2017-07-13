@@ -1,100 +1,124 @@
-Práctica 1 - Diseña un script para gestionar por consola una máquina expendedora.Características:
+var readline = require('readline');
 
-Solo los usuarios registrados pueden usar la máquina
-El sistema funciona sin dinero real, en su lugar se usa un sistema de puntos
-Los usuarios disponen de unos puntos para gastar en la máquina que el departamento de personal asigna.
-La maquina no concederá creditos, solo trabaja en base a los puntos disponibles.
-Para agilizar la reposición de lo consumido... la maquina debe controlar en stock
-Paso 1 - Creamos los primeros objetos básicos:
+var rl = readline.createInterface({
+	input: process.stdin,
+  output: process.stdout
+});
 
-//Maquina Expendedora (Objeto)
-	var maquinaExpendedora = {};
-	
-//Productos (Array)
-	var productos = [];
-	
-//Clientes (Array)
-	var clientes = [];
+	const userList = [
+{name: 'jose', 
+username: 'pepe',
+password: '1234',
+type: 'admin',
+budget: 10},
+{name: 'carolina', 
+username: 'karol',
+password: '1234',
+type: 'normal',
+budget: 10},
+];
 
-	
-Paso 2 - Creamos los primeros perfiles en el Array de clientes:
+const myProducts = [
+{
+	name: 'coca cola',
+	stock: 5
+},
+{
+	name: 'patatas',
+	stock: 5
+},
+{
+	name: 'zumo',
+	stock: 5
+},
+{
+	name: 'fanta',
+	stock: 5
+},
+{
+	name: 'chocolatina',
+	stock: 5
+}]
 
-    var clientes = [{
-        // admin
-        nombre: "Carolina Chamorro",
-        usuario: "karoldesign",
-        contraseña: "1234",
-        tipo: "admin",
-        presupuesto: "5000",
-        gasto: []
-    }, {
-        nombre: "Veronica Chamorro",
-        usuario: "veritochs",
-        contraseña: "4321",
-        tipo: "usuario",
-        presupuesto: "2300",
-        gasto: []
-    }];
-	
-	
-	
-Paso 3 - Creamos varios métodos para gestionar a los clientes y sus necesidades
+var machine = {
+	clients: userList,
+	products: myProducts,
+	password: 'ficticiaMola'
+}
 
-Metodos:
-Consultar saldo de un cliente
-Devolverá el saldo existente o -1 en caso de error
-Comprobaremos la contraseña y el usuario
-Consultar gastos de un cliente
-Devolverá un array o false en caso de error
-Comprobaremos la contraseña y el usuario
-Agregar un cliente
-Eliminar un cliente
-
-Caracteristicas:
-Evitaremos que se registren usuarios que ya existan
-Evitaremos eliminar usuarios que no existan
-Evitaremos dar de alta usuarios que no esten debidamente cumplimentados
-Protegeremos las funciones de gestión de usuarios con la contraseña ficticiaMola
-
-var maquinaExpendedora = {
-var consultarClientes = {
+function getUserBudget(username, password) {
+		for( i = 0; i < machine.clients.length; i++){
+			if(machine.clients[i].username === username) {
+				if(machine.clients[i].password === password) {
+					return machine.clients[i].budget;
+				}else{
+					return -1;
+				}
+			}
+		}
+		return -1;
+	}
 
 
+ function addUser(name, username, password, budget, adminPassword) {
 
-	
-	
-	
-Paso 4 - Creamos varios métodos para gestionar a los productos y sus necesidades
+		if(adminPassword !== 'ficticiaMola') return -1;
+		if(name === null) return -1;
+		if(username === null) return -1;
+		if(password === null) return -1;
+		if(budget === null) return -1;
+		var ind;
+		for( i = 0; i < machine.clients.length; i++) {
+			if(machine.clients[i].username === username) {
+				ind = i;
+			}
+		}
+		if(!ind) { 
+			machine.clients.push({name: name, username: username, password: password, budget: budget});
+		}
+		
+	}
 
-Creamos 5 productos que estarán disponibles a la venta
+	function removeUser(username, adminPassword) {
+		if(adminPassword !== 'ficticiaMola') return -1;
+		var ind = -1;
+		for( i = 0; i < machine.clients.length; i++){
+			if(machine.clients[i].username === username) {
+				ind = i;
+			}
+		}
+		if(ind < 0) return -1;
+		machine.clients.splice(ind,1);
+	}
+/*
+	function buyProduct(username, password, product){
+		var finded  = false;
+		for( i = 0; i < machine.clients.length; i++) {
+			if(machine.clients[i].username === username) {
+				if(machine.clients[i].password === password) {
+					finded = true;
+				}else{
+					return -1;
+				}
+			}
+		}
+		if(finded){
+			for( i = 0; i < machine.products.length; i++) {
+				if(machine.products[i].name === product) {
+					return 'prducto encontrado'
+				}
+			}
+			return -1;
+		}else {
+			return -1;
+		}
+	}
 
-Métodos:
-
-Consumir un producto (cliente)
-Comprobaremos la contraseña y el usuario
-Devolverá el producto o -1 en caso de no existir o estar agotado
-Actualizaremos el stock
-Actualizaremos el saldo del cliente
-Agregar un producto a la máquina (administración)
-Eliminar un prodcutos de la máquina (administración)
-Caracteristicas:
-
-Evitaremos agregar productos que ya existan
-Evitaremos eliminar productos que no existan
-Evitaremos agregar productos que no esten debidamente cumplimentados
-Protegeremos las funciones de agregar y eliminar productos con la contraseña ficticiaMola
-	// Tu solución
-Paso 5 - Ahora podemos agregar los métodos para agregar, retirar y resetear saldo de los usuarios.
-
-Importante:
-Los saldos jamas pueden ser negativos.
-	// Tu solución
-Paso 6 - Ahora podemos agregar el método para saber la disponibilidad de stock
-
-Importante:
-Es necesaria clave (adminsitrador)
-Debemos saber las existencias
-Debemos saber que productos estan disponibles y cuales no.
-Debemos incluir el código y el nombre
-Cuando se imprima el informe... es necesario incluir la fecha.
-	// Tu solución
+console.log("*****************")
+console.log(machine.clients);
+console.log(machine.products);
+console.log("*****************&&&&&&")
+buyProduct('pepe','1234','coca cola');
+console.log(machine.clients);
+console.log(machine.products);
+*/

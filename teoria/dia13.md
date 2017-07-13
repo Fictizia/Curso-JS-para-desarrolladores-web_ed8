@@ -503,7 +503,8 @@ Nota: http://openweathermap.org te será de gran ayuda, busca la solución al er
     
     temperaturaCiudad("Madrid");
     temperaturaCiudad("Barcelona");
-    temperaturaCiudad("Valencia");```
+    temperaturaCiudad("Valencia");
+ ```
 
 3 - Jugando con [datos abiertos](http://datos.gob.es/), saquemos los detalles de todos los cuadros eléctricos de Gijón por consola.
 

@@ -414,3 +414,214 @@ Debemos saber que productos estan disponibles y cuales no.
 Debemos incluir el código y el nombre
 Cuando se imprima el informe... es necesario incluir la fecha.
 	// Tu solución
+
+// PASO 4 PRUEBA 
+
+var maquina = {
+  productos: [art, posic, stock,precio],
+  clientes: [nombre,saldo],
+};
+
+var art = ["sandwich","fanta","agua","coca-cola","bollo"];
+var posic = [1,2,3,4,5,6];
+var stock = [7,12,25,5,9];
+var precio = [120, 70, 60, 70, 90];
+
+var nombre = ["Laura","Luís","Pedro"];
+var pass = ["laura1","luis1","pedro1"];
+var saldo = [1270,930,630];
+var gasto = [gasto1,gasto2,gasto3];
+var gasto1 = [];
+var gasto2 = [];
+var gasto3 = [];
+
+
+//COMPRA:
+
+function claveGeneral (){
+var confirmarClave=prompt("Indica la clave de acceso");
+for (var intentos = 0; intentos <= 3; intentos++){
+
+if (confirmarClave==="FictiziaMola"){
+
+console.log("accediendo");
+return true;
+}
+else if (intentos===3){
+	console.log("has agotado todos los intentos. Por seguridad no puedes acceder");
+	
+}
+
+else {
+	console.log(confirmarClave);
+}
+}
+}
+
+
+
+//VERIFICAR USUARIO
+
+
+function verificarUsuario(){
+	
+
+for (var i = 0; i < nombre.length; i++) {
+	        if (nombre[i] === introducirUsuario) {
+	        	var verPass = prompt("verifica la contraseña de usuario");
+	        	if (verPass===pass[i]) {
+	            return true;
+	            }
+	   			else {
+	   			console.log("contraseña incorreta");
+	   			return false;
+	   			}
+	   		break;
+	        }
+	   
+	    }
+}
+
+//CLIENTES - VER SALDO
+
+
+function pasoSaldo(){
+	var introducirUsuario = prompt("indica el nombre del usuario");
+	verificarUsuario();
+
+if (verificarUsuario === true){
+for (var i = 0; i < nombre.length; i++) {
+	         if (nombre[i] === introducirUsuario){
+	        	console.log(saldo[i]);
+	        }
+	        else {
+	        verSaldo=-1;
+	        }
+	 	
+	    }
+}
+}
+
+
+//CLIENTES - GASTOS
+
+var gastos=[];
+function masGasto () {}
+function consultarGasto (){
+  verificarUsuario();
+if (verificarUsuario === true){
+  for (var i = 0; i < nombre.length; i++) {
+	        if (nombre[i] === verGasto) {
+	        	var verPass = prompt("verifica la contraseña de usuario");
+	        	if (verPass===pass[i]) {
+	            console.log(gasto[i]);
+	            }
+	   			else {
+	   			console.log("contraseña incorreta");
+	   			}
+	   		break;
+	        }
+	        else {
+	        verGasto=false;
+	        }
+	 	
+	    }
+
+}	
+}
+
+
+//CLIENTES - AÑADIR
+
+
+function nuevoCliente (){
+ 	var agregarCliente = prompt("Introduzca el nombre del nuevo cliente");
+ 	for (var i = 0; i < nombre.length; i++) {
+	        if (nombre[i] === agregarCliente) {
+	        	console.log("el cliente ya existe");
+	        }
+	        else {
+	        nombre.push(agregarCliente);
+	        var agregarPass = prompt("introduce clave de usuario");
+	        if (agregarPass !== ""){
+	        pass.push(agregarPass);
+	        }
+	        else{
+	        console.log("El campo no puede estar vacío");
+	        }
+	        var agregarSaldo = prompt ("introduce saldo de usuario");
+	         if (agregarSaldo !== ""){
+	        pass.push(agregarSaldo);
+	        }
+	        else{
+	        console.log("El campo no puede estar vacío");
+	        }
+	        break;
+	        }
+	 	
+	    }
+ }
+
+ // CLIENTES -ELIMINAR
+
+ function eliminarCliente (){
+ var eliminarCliente = prompt("Introduzca el nombre del cliente que quiere eliminar");
+ 	for (var i = 0; i < nombre.length; i++) {
+	        if (nombre[i] === eliminarCliente) {
+	        nombre.splice(i,1);
+	        pass.splice(i,1);
+	        saldo.splice(i,1);
+	        console.log("usuario eliminado");
+	        break;        	
+	        }
+	        else {
+	        	console.log("el nombre no existe en nuestra base de datos");
+	        }
+	 	
+	    }
+ }
+
+
+//COMPRA PRODUCTO
+
+var compra=prompt("indique la posición del producto que desea adquirir");
+	if (parseInt(compra)!==NaN){
+	var compraUsuario= propmt("confirma tu usuario");
+
+
+ 			if (nombre[i] === compraUsuario) {
+	        	var verPass = prompt("verifica la contraseña de usuario");
+	        	if (verPass===pass[i]) {
+	            	
+	            }
+	   			else {
+	   			console.log("contraseña incorreta");
+	   			}
+	   		
+	        }
+	        else {
+	        verSaldo=-1;
+	        }
+
+
+	for (var i = 0; i < posic.length; i++) {
+	        if (posic[i] === verGasto) {
+	        	var verPass = prompt("verifica la contraseña de usuario");
+	        	if (verPass===pass[i]) {
+	            console.log(gasto[i]);
+	            }
+	   			else {
+	   			console.log("contraseña incorreta");
+	   			}
+	   		break;
+	        }
+	        else {
+	        verGasto=false;
+	        }
+	 	
+	    }
+
+	
+
+
+}

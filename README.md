@@ -2,8 +2,7 @@
 ![shieldsIO](https://img.shields.io/github/forks/Fictizia/Curso-JS-para-desarrolladores-web_ed8.svg)
 ![shieldsIO](https://img.shields.io/github/stars/Fictizia/Curso-JS-para-desarrolladores-web_ed8.svg)
 
-![WideImg](http://www.fictizia.com/assets/styles/styleImgs/wideBox/widebox_js.png)
-![Fictizia Logo](https://media.licdn.com/media/p/1/000/1ed/254/29475de.png)
+![WideImg](http://fictizia.com/img/github/Fictizia-plan-estudios-github.jpg)
 
 # JavaScript para desarrolladores web
 ### Programación con JavaScript, Manejo del DOM, Aplicaciones interactivas con AJAX, vanilla JS.

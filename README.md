@@ -2,11 +2,11 @@
 ![shieldsIO](https://img.shields.io/github/forks/Fictizia/Curso-JS-para-desarrolladores-web_ed8.svg)
 ![shieldsIO](https://img.shields.io/github/stars/Fictizia/Curso-JS-para-desarrolladores-web_ed8.svg)
 
-# JavaScript para desarrolladores web
-### Programación con JavaScript, Manejo del DOM, Aplicaciones interactivas con AJAX, vanilla JS.
-
 ![WideImg](http://www.fictizia.com/assets/styles/styleImgs/wideBox/widebox_js.png)
 ![Fictizia Logo](https://media.licdn.com/media/p/1/000/1ed/254/29475de.png)
+
+# JavaScript para desarrolladores web
+### Programación con JavaScript, Manejo del DOM, Aplicaciones interactivas con AJAX, vanilla JS.
 
 El Curso de JavaScript para desarrolladores web está pensado para que sus alumnos descubran el desarrollo con JavaScript nativo y adquieran las capacidades necesarias para crear profesionalmente sitios web dinámicos a medida de las necesidades de cada proyecto.
 
